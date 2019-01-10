@@ -1,0 +1,62 @@
+extends ../template
+
+block variables
+    - var title = 'Мой аккаунт'
+
+block content
+    section.section
+        .block__top--title
+            h2.h2__title 
+                a(href="index.html" class="confirm__title-link") Sticky Sisters
+        .block__button--show-confirm-right
+            .block__button-container
+                .block__button--wrap-left
+                    .wrap-left-cart--svg
+                        svg.wrap-left--svg
+                            use(xlink:href="assets/sprite/sprite.svg#cart-grid")  
+                    .wrap-left--text-show   Показать корзину заказа
+                        svg.wrap-arrows--svg
+                            use(xlink:href="assets/sprite/sprite.svg#down")  
+                    .wrap-left--text-hide Скрыть корзину заказа
+                        svg.wrap-arrows--svg
+                            use(xlink:href="assets/sprite/sprite.svg#up")  
+                .block__button--wrap-right 3190 руб                
+        .container.grid__container__confirm
+            .confirm-left    
+                .block__inside--title
+                    h2.h2__title 
+                        a(href="index.html" class="confirm__title-link") Sticky Sisters
+
+                include ../common/navigation-cart.pug
+
+                .block__confirm
+                    .block__confirm-header
+                        .block__title-text Контактная информация
+                        .block__title-total У вас уже есть аккаунт?&nbsp;
+                            a(href="accaunt.html" class="confirm-link confirm-auth") Войти
+                    .contact-information
+                        .block__confirm--pic
+                            .wrap__confirm--pic--svg
+                                svg.confirm--pic--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#user1")
+                        .block__confirm--inform
+                            .confirm-fio
+                                span.confirm-name Евгений&nbsp;
+                                span.confirm-lastname Сишненко&nbsp;
+                                span.confirm-mail (sisters@mail.ru)
+                            .confirm-logout
+                                a(href="#" class='confirm-link confirm-logout') Выйти
+                    .block__title-text.margin-top Информация для доставки
+                        span.reg-important *
+                    include ../common/form-confirm.pug      
+
+
+                    
+
+            .confirm-right
+                include ../common/confirm-right.pug     
+    
+
+
+
+                                

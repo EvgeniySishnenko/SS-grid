@@ -1,0 +1,62 @@
+section.section.section__products__grid
+    .container
+        .block__title
+            h2.h2__title.position-center Популярные товары
+        .block__products__grid
+            ul.products__grid--list
+                - for (var i=0; i<15; i++) { 
+                    if i == 1 || i == 2 || i== 3 || i == 4 || i == 5 
+                        li.products__grid--item.products__grid--sale-circle
+                            .products__grid__block-image
+                                a(href="#").products__grid__image--link
+                                    img.product__image(src="assets/images/product.png" alt="" title="")
+                            .products__grid__description
+                                .block__title.position-center-top
+                                    a(href="#").products__grid__title--link Планер на октябрь 
+                                .products__grid__price
+                                    .products__grid__count 130 руб.
+                                    .products__grid__count-discount 99 руб.
+                            .products__grid-options
+                                .options__add-cart
+                                    a.add-cart--link(href="#")
+                                        svg.add-cart--svg
+                                            use(xlink:href="assets/sprite/sprite.svg#cart-grid")
+                                        span.add-cart--shrt_text В корзину
+                                .options__add-wishlist__magnifier
+                                    a.add-wishlist--link(title="Добавить избранное" href="#")
+                                        svg.add-wishlist--svg
+                                            use(xlink:href="assets/sprite/sprite.svg#heart")
+                                    a.add-magnifier--link(title="Быстрый просмотр" href="#")
+                                        svg.magnifier--svg
+                                            use(xlink:href="assets/sprite/sprite.svg#magnifie")
+                    else 
+                        li.products__grid--item
+                            .products__grid__block-image
+                                a(href="#").products__grid__image--link
+                                    img.product__image(src="assets/images/product.png" alt="" title="")
+                            .products__grid__description
+                                .block__title.position-center-top
+                                    a(href="#").products__grid__title--link Планер на октябрь 
+                                .products__grid__price
+                                    .products__grid__count 130 руб.
+                                    .products__grid__count-discount
+                            .products__grid-options
+                                .options__add-cart
+                                    a.add-cart--link(href="#")
+                                        svg.add-cart--svg
+                                            use(xlink:href="assets/sprite/sprite.svg#cart-grid")
+                                        span.add-cart--shrt_text В корзину
+                                .options__add-wishlist__magnifier
+                                    a.add-wishlist--link(title="Добавить избранное" href="#")
+                                        svg.add-wishlist--svg
+                                            use(xlink:href="assets/sprite/sprite.svg#heart")
+                                    a.add-magnifier--link(title="Быстрый просмотр" href="#")
+                                        svg.magnifier--svg
+                                            use(xlink:href="assets/sprite/sprite.svg#magnifie")
+
+                    
+                    
+                -}
+                
+        
+            

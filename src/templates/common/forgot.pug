@@ -1,0 +1,14 @@
+.block__title-text.block__title-text--forgot Мы вышлем Вам новый пароль на почту
+.block__form.block__form-forgot
+    form.form__forgot
+        label.forgot__label
+            .forgot--email Email
+                span.forgot-important *
+            input(class="forgot__input forgot__input--email" required title="Поле не может быть пустым"  type="email" name="reg_email")
+        .forgot__button
+            input(class="button__link forgot__input--button" type="submit" value="Отправить"  name="forgot_button")
+            a(href="#" class="forgot-closed--link") Закрыть
+.forgot__close
+    svg.forgot__close--svg
+        use(xlink:href="assets/sprite/sprite.svg#closed")
+    | Закрыть

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+  </head>
+  <body>  
+    <section class="section">
+      <div class="block__top--title">
+        <h2 class="h2__title"> <a class="confirm__title-link" href="index.html">Sticky Sisters</a></h2>
+      </div>
+      <div class="block__button--show-confirm-right">
+        <div class="block__button-container">
+          <div class="block__button--wrap-left">
+            <div class="wrap-left-cart--svg">
+              <svg class="wrap-left--svg">
+                <use xlink:href="assets/sprite/sprite.svg#cart-grid"> </use>
+              </svg>
+            </div>
+            <div class="wrap-left--text-show">  Показать корзину заказа
+              <svg class="wrap-arrows--svg">
+                <use xlink:href="assets/sprite/sprite.svg#down"> </use>
+              </svg>
+            </div>
+            <div class="wrap-left--text-hide">Скрыть корзину заказа
+              <svg class="wrap-arrows--svg">
+                <use xlink:href="assets/sprite/sprite.svg#up"> </use>
+              </svg>
+            </div>
+          </div>
+          <div class="block__button--wrap-right">3190 руб                </div>
+        </div>
+      </div>
+      <div class="container grid__container__confirm">
+        <div class="confirm-left">   
+          <div class="block__inside--title">
+            <h2 class="h2__title"> <a class="confirm__title-link" href="index.html">Sticky Sisters</a></h2>
+          </div>
+          <div class="navigation__cart">
+            <div class="navigation__cart--chain"><a class="navigation__cart__link" href="cart-onclick.html">1.Корзина товаров </a><span class="wrap__navigation__cart-svg">
+                <svg class="navigation__cart-svg">
+                  <use xlink:href="assets/sprite/sprite.svg#next"></use>
+                </svg></span><span class="navigation__cart__curent-page">2.Информация для доставки</span><span class="wrap__navigation__cart-svg">
+                <svg class="navigation__cart-svg">
+                  <use xlink:href="assets/sprite/sprite.svg#next"></use>
+                </svg></span><span class="navigation__cart__page">3.Оплата</span></div>
+            <div class="navigation__cart--step">шаг 1 из 3</div>
+          </div>
+          <div class="block__confirm">
+            <div class="block__confirm-header">
+              <div class="block__title-text">Контактная информация</div>
+              <div class="block__title-total">У вас уже есть аккаунт?&nbsp;<a class="confirm-link confirm-auth" href="accaunt.html">Войти</a></div>
+            </div>
+            <div class="contact-information">
+              <div class="block__confirm--pic">
+                <div class="wrap__confirm--pic--svg">
+                  <svg class="confirm--pic--svg">
+                    <use xlink:href="assets/sprite/sprite.svg#user1"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="block__confirm--inform">
+                <div class="confirm-fio"><span class="confirm-name">Евгений&nbsp;</span><span class="confirm-lastname">Сишненко&nbsp;</span><span class="confirm-mail">(sisters@mail.ru)</span></div>
+                <div class="confirm-logout"><a class="confirm-link confirm-logout" href="#">Выйти</a></div>
+              </div>
+            </div>
+            <div class="block__title-text margin-top">Информация для доставки<span class="reg-important">*</span></div>
+            <form class="form__confirm">
+              <div class="wrap__label--radio">
+                <label class="confirm__label--radio">    
+                  <input class="confirm__input--radio " required title="Выбере одну из доставок" type="radio" name="shipping"><span class="radio-custom"></span>
+                  <div class="confirm--radio">Бесплатная доставка</div>
+                </label>
+                <label class="confirm__label--radio">
+                  <input class="confirm__input--radio " required title="Выбере одну из доставок" type="radio" name="shipping"><span class="radio-custom"></span>
+                  <div class="confirm--radio">Доставка по России</div>
+                </label>
+                <label class="confirm__label--radio">
+                  <input class="confirm__input--radio " required title="Выбере одну из доставок" type="radio" name="shipping"><span class="radio-custom"></span>
+                  <div class="confirm--radio">Доставка в страны СНГ</div>
+                </label>
+              </div>
+              <div class="grid__wrap__label--2fr">
+                <label class="confirm__label">
+                  <div class="confirm--firstName">Имя<span class="reg-important">*</span></div>
+                  <input class="confirm__input confirm__input--firstname" required title="От 3 до 15 символов" type="text" name="confirm_firstname">
+                </label>
+                <label class="confirm__label">
+                  <div class="confirm--lastName">Фамилия<span class="reg-important">*</span></div>
+                  <input class="confirm__input confirm__input--lastname" required title="От 3 до 25 символов" type="text" name="confirm_lastname">
+                </label>
+              </div>
+              <div class="grid__wrap__label--2fr">
+                <label class="confirm__label">
+                  <div class="confirm--patronymic">Отчество<span class="reg-important">*</span></div>
+                  <input class="confirm__input confirm__input--patronymic" required title="От 3 до 15 символов" type="text" name="confirm_patronymic">
+                </label>
+                <label class="confirm__label">
+                  <div class="confirm--email">Email<span class="reg-important">*</span></div>
+                  <input class="confirm__input confirm__input--email" required title="Поле не может быть пустым" type="email" name="confirm_email">
+                </label>
+              </div>
+              <div class="grid__wrap__label--2fr">
+                <label class="confirm__label">
+                  <div class="confirm--phone">Телефон<span class="reg-important">*</span></div>
+                  <input class="confirm__input confirm__input--phone" required title="Поле не может быть пустым" type="text" name="confirm_phone">
+                </label>
+                <label class="confirm__label">
+                  <div class="confirm--index">Индекс<span class="reg-important">*</span></div>
+                  <input class="confirm__input confirm__input--index" title="Поле не может быть пустым" type="text" name="confirm_index">
+                </label>
+              </div>
+              <div class="grid__wrap__label--1fr">
+                <label class="confirm__label">
+                  <div class="confirm--address">Адрес доставки<span class="reg-important">*</span></div>
+                  <input class="confirm__input confirm__input--address" required title="Поле не может быть пустым" type="text" name="reg_address">
+                </label>
+              </div>
+              <div class="block__order-comment">
+                <textarea class="order-comment" name="order-comment" placeholder="Комментарии к заказу"></textarea>
+              </div>
+              <div class="confirm__button"> <a class="next-cart" href="cart-oneclick.html"> 
+                  <svg class="next-cart-svg">
+                    <use xlink:href="assets/sprite/sprite.svg#prev"> </use>
+                  </svg>Вернуться в корзину</a>
+                <input class="next-completion-button" type="submit" value="Далее" name="next-completion-button">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="confirm-right">
+          <div class="orders__cart">
+            <div class="orders__cart__product-grid">
+              <ul class="orders__product--list">
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+                <li class="orders__product--item">
+                  <div class="orders__product--pic">  <img class="orders__product-img" src="assets/images/prod.png">
+                    <div class="wrap__orders__count">
+                      <div class="orders__count">3</div>
+                    </div>
+                  </div>
+                  <div class="orders__product--desc">
+                    <div class="orders__product--title">Наклеки Sticky Sisters</div>
+                  </div>
+                  <div class="orders__product--total">390 руб.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="order__total">
+              <div class="wrap__sub">
+                <div class="wrap__sub-total">
+                  <div class="block__title-total">Промежуточный итог</div>
+                  <div class="block__title-total">100</div>
+                </div>
+                <div class="wrap__sub-total">
+                  <div class="block__title-total">Доставка</div>
+                  <div class="block__title-total">Бесплатно</div>
+                </div>
+              </div>
+              <div class="wrap__order">
+                <div class="order__total-price">
+                  <div class="block__title-text">Итого</div>
+                  <div class="block__title-text">3190 руб.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

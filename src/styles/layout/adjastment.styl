@@ -1,0 +1,64 @@
+.grid__container--universal
+    dis()
+    grid-gap 30px 0
+    gtc(1fr)
+    gtr(minmax(80px, auto) auto auto)
+    gta("header"\
+        "section__area"\
+        "footer")
+.header
+    grid-area header
+.section__area
+    grid-area section__area
+.footer
+    grid-area footer
+
+.container 
+    margin 0 auto
+    max-width: 1200px
+    
+    +adapt(1200px)
+        max-width: 992px
+        width 100% 
+        padding-left 10px
+        padding-right 10px 
+    +adapt(992px)
+        max-width: 992px
+        width 100% 
+        
+    +adapt(768px)
+        max-width: 768px
+        width 100% 
+        
+    +adapt(480px)
+        max-width: 480px
+        width 100% 
+    +adapt(320px)
+        min-width 320px
+     
+.block__title
+    width 100%
+.h2__title
+    font(Rr, 27px)
+.h3__title
+    font(Rm, 18px)
+.position-center
+    text-align center
+.position-center-top
+    text-align center
+    margin-top 10px
+.margin-top
+    margin-top 40px
+.button__link
+    display block
+    width 170px
+    height 37px
+    background-color blue
+    font(Rr,16px, white)
+    display flex 
+    align-items center 
+    justify-content center
+    transition background-color ease .2s
+    cursor pointer
+    &:hover 
+        background-color dark

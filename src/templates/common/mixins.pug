@@ -1,0 +1,80 @@
+include array.pug
+
+mixin social(item)
+    li.header__social--item
+        a(href=`${item.href}` target="_blank").header__social--link
+            svg.header__social--svg
+                use(xlink:href=`${item.xlink}`)
+
+    
+mixin menu(item)
+    li.header__menu--item
+        a(href=`${item.href}`).header__menu--link=item.item
+        if item.item == 'Каталог'
+            ul.header__submenu--list
+                li.header__submenu--item 
+                    a.header__submenu--link(href="stiker.html") Стикеры
+                li.header__submenu--item
+                    a.header__submenu--link(href="stickerbooki.html") Стикербуки
+                li.header__submenu--item
+                    a.header__submenu--link(href="planner.html") Планеры
+                li.header__submenu--item
+                    a.header__submenu--link(href="zakladki.html") Закладки
+                li.header__submenu--item
+                    a.header__submenu--link(href="tags_gifts.html") Бирки на подарки
+                li.header__submenu--item
+                    a.header__submenu--link(href="cards.html") Открытки
+                
+       
+        else if item.item == 'Акции'
+            ul.header__submenu--list
+                li.header__submenu--item 
+                    a.header__submenu--link(href="aktcii.html") Дарим 1000 рублей
+                li.header__submenu--item
+                    a.header__submenu--link(href="aktcii.html") Бесплатная доставка
+                li.header__submenu--item
+                    a.header__submenu--link(href="aktcii.html") Промокоды
+                li.header__submenu--item
+                    a.header__submenu--link(href="aktcii.html") Узнать больше
+
+mixin menuMobile(item)
+    li.menu__mobile--item
+        if item.item == 'Каталог'
+            .wrap__link-plus
+                a(href=`${item.href}`).menu__mobile--link=item.item
+                .btn__plus
+                    .wrap__plus
+                        .btn__plus--line1
+                        .btn__plus--line2
+            ul.header__mobile__submenu--list
+                li.header__mobile__submenu--item 
+                    a.header__mobile__submenu--link(href="stiker.html") Стикеры
+                li.header__mobile__submenu--item
+                    a.header__mobile__submenu--link(href="stickerbooki.html") Стикербуки
+                li.header__mobile__submenu--item
+                    a.header__mobile__submenu--link(href="planner.html") Планеры
+                li.header__mobile__submenu--item
+                    a.header__mobile__submenu--link(href="zakladki.html") Закладки
+                li.header__mobile__submenu--item
+                    a.header__mobile__submenu--link(href="tags_gifts.html") Бирки на подарки
+                li.header__mobile__submenu--item
+                    a.header__mobile__submenu--link(href="cards.html") Открытки
+        else if item.item == 'Акции'
+            .wrap__link-plus
+                a(href=`${item.href}`).menu__mobile--link=item.item
+                .btn__plus
+                    .wrap__plus
+                        .btn__plus--line1
+                        .btn__plus--line2
+            ul.header__mobile__submenu--list
+                li.header__mobile__submenu--item 
+                    a.header__mobile__submenu--link(href="aktcii.html") Дарим 1000 рублей
+                li.header__mobile__submenu--item
+                    a.header__mobile__submenu--link(href="aktcii.html") Бесплатная доставка
+                li.header__mobile__submenu--item
+                    a.header__mobile__submenu--link(href="aktcii.html") Промокоды 
+                li.header__mobile__submenu--item 
+                    a.header__mobile__submenu--link(href="aktcii.html") Узнать больше          
+        else
+            a(href=`${item.href}`).menu__mobile--link=item.item
+        

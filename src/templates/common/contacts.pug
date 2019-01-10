@@ -1,0 +1,51 @@
+.block__contacts
+    .block__title-text Наши контакты
+    ul.contacts__list
+        li.contacts__item
+            .wrap__contacts--svg
+                svg.contacts--svg
+                    use(xlink:href="assets/sprite/sprite.svg#house")
+            .contacts__text
+                .contacts__title-text Адрес
+                .contacts--shrt_text Москва Пятницкое шоссе 12/2
+        li.contacts__item
+            .wrap__contacts--svg
+                svg.contacts--svg
+                    use(xlink:href="assets/sprite/sprite.svg#clock")
+            .contacts__text
+                .contacts__title-text Часы работы
+                .contacts--shrt_text 24/7
+        li.contacts__item
+            .wrap__contacts--svg
+                svg.contacts--svg
+                    use(xlink:href="assets/sprite/sprite.svg#mail")
+            .contacts__text
+                .contacts__title-text EMAIL
+                .contacts--shrt_text sticky_sisters@mail.ru
+.block__feedback
+    .block__title-text Обратная связь
+    form.form__feedback
+        input(class="feedback__input feedback__input--email" required title="Поле не может быть пустым"  type="text" name="feedback_name" placeholder="Имя")
+        input(class="feedback__input feedback__input--email" required title="Поле не может быть пустым"  type="email" name="feedback_email" placeholder="Email")
+        textarea(placeholder="Сообщение" class="feedback__textarea")
+        input(class="button__link feedback__input--button" type="submit" value="Отправить"  name="feedback_button")
+        
+.block__follow-us
+    .block__title-text Подписывайтесь на нас
+    ul.follow-us__list
+        li.follow-us__item
+            a.follow-us__link(href="https://www.facebook.com/stickysisters.ru/")
+                svg.follow-us--svg
+                    use(xlink:href="assets/sprite/sprite.svg#fcb")
+                .contacts__title-text Подписывайтесь на Facebook
+        li.follow-us__item
+            a.follow-us__link(href="https://www.instagram.com/sticky_sisters/")
+                svg.follow-us--svg
+                    use(xlink:href="assets/sprite/sprite.svg#inst")
+                .contacts__title-text Подписывайтесь на Instagram
+        li.follow-us__item
+            a.follow-us__link(href="https://www.youtube.com/channel/UCNCwhPjC75koMs9ZmaVCD8g")
+                svg.follow-us--svg
+                    use(xlink:href="assets/sprite/sprite.svg#yt")
+                .contacts__title-text Подписывайтесь на YouTub
+        

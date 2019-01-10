@@ -1,0 +1,9 @@
+.block__menu__mobile
+    .block__left
+        ul.menu__mobile--list
+            for item in menuList
+                +menuMobile(item)
+    .block__right
+        .closed
+            svg.closed-svg  
+                use(xlink:href="assets/sprite/sprite.svg#closed")

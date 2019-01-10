@@ -1,0 +1,49 @@
+include mixins.pug
+
+header.header.grid__header
+    .header__top
+        .container.grid__header__top
+            .header__social
+                ul.header__social--list
+                    for item in socialsList
+                        +social(item)
+            .header__options
+                ul.header__options--list
+                    li.header__options--item(title="Мой аккаут")
+                        a(href="account.html").header__options--link
+                            svg.header__options--svg
+                                use(xlink:href="assets/sprite/sprite.svg#user")
+                            span.header__options--text Мой аккаунт
+                        a(href="#").header__options--auth_link
+                            svg.header__options--svg
+                                use(xlink:href="assets/sprite/sprite.svg#user")
+                            span.header__options--auth_name Евгений
+                    li.header__options--item(title="Избранное")
+                         a(href="#").header__options--link
+                            svg.header__options--svg
+                                use(xlink:href="assets/sprite/sprite.svg#heart")
+                            span.header__options--text Избранное
+    .header__bottom
+        .container.grid__header__bottom
+            .header__logo
+                a(href="index.html").home__link
+                    img(src="assets/images/logo.png").logo-img
+                    h2.name-shop Sticky Sisters
+            .menu__grid--area
+                nav.header__menu
+                    ul.header__menu--list
+                        for item in menuList
+                            +menu(item)
+                .btn__mobile
+                    .btn__mobile-line
+                    .btn__mobile-line
+                    .btn__mobile-line
+            
+            .header__cart
+                a.header__cart--link(href="cart-oneclick.html")
+                    svg.header__cart--svg
+                        use(xlink:href="assets/sprite/sprite.svg#cart")
+                    span.header__cart--text Корзина:&nbsp; 
+                    span.header__cart--count 100 
+                    span.header__cart--rest  &nbsp;товар(ов)
+                include cart-hover.pug

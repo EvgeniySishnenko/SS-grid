@@ -1,0 +1,151 @@
+.profile
+    display none
+    margin-bottom 30px
+.block__title-text--profile
+    margin-top 15px
+.wrap__edit-information
+    width 100%
+    display flex 
+    flex-direction column
+    justify-content center
+    align-items center 
+    margin-top 20px
+.edit  
+    width 100%
+    border-top 2px solid black
+    border-left 1px solid #d8d8d8
+    border-right 1px solid #d8d8d8
+    border-bottom 1px solid #d8d8d8
+    padding 20px
+    +adapt(992px)
+        width 100%
+
+.edit-list
+    width 100%
+    margin-top 10px
+.edit-item
+    position  relative
+    width 100%
+    border-bottom 1px solid #d8d8d8
+    display flex 
+    align-items center
+    min-height 50px
+    height auto
+    cursor pointer
+    flex-wrap wrap 
+    &:last-child
+        border-bottom 0
+    &:hover
+        background-color white
+        .block__edit--svg
+            display block
+            
+.edit-title
+    font(Rm, 16px)
+    width 23%
+    tran(color, 0.4s)
+    +adapt(950px)
+        width 97%
+.edit-value
+    font(Rr, 16px)
+    width 74%
+    overflow hidden
+    white-space nowrap 
+    +adapt(950px)
+        width 97%
+        margin-bottom 10px
+.block__edit--svg
+    width 3%
+    display none
+    text-align right
+    +adapt(950px)
+        position absolute
+        right 0
+        top 50%
+        transform translateY(-50%);
+    +adapt(480px)
+        display block
+.edit--svg
+    fill blue
+    width 12px
+    height 12px
+
+.block__edit__form
+    display none
+    width 74%
+    
+.edit__form
+    display flex
+    align-items center
+    height 100%
+    width 100%
+.edit__input
+    height 35px
+    outline none
+    width 80%
+    background-color white
+    border-radius 3px
+    margin-right 20px
+    border 1px solid #d8d8d8
+.edit__save-button
+    width 15%
+    border none
+    outline none 
+    display inline-block
+    &:focus
+        border none
+        outline none
+.edit-cancel
+    margin-left 10px
+.edit-cancel--svg
+    fill #ed5778
+    width 15px
+    height 15px
+    
+.edit-item--show-input
+    .edit-title 
+        font(Rr, 16px, blue)
+    .block__edit__form
+        display block
+    .edit-value
+        display none
+    &:hover
+        .block__edit--svg
+            display none
+    +adapt(950px)
+        display block 
+        .edit__form
+            display block
+        .edit__input
+            width 100%
+        .edit__input--newpass
+            margin-top 10px
+        .block__edit__form
+            width 100%
+            margin-top 10px
+        .edit__save-button
+            margin-top 10px
+            margin-bottom 10px
+        .edit__save-button
+            width 160px
+    .block__edit--svg
+        +adapt(480px)
+            display none
+.information  
+    margin-top 30px
+    width 100%
+    border-top 2px solid black
+    border-left 1px solid #d8d8d8
+    border-right 1px solid #d8d8d8
+    border-bottom 1px solid #d8d8d8
+    padding 20px
+.information--list
+    margin-top 10px
+.information--item
+    font(Rm, 16px)
+    margin-top 10px
+    &:first-child
+        margin-top 0
+.information-value
+    margin-left 10px
+    font(Rr, 16px)

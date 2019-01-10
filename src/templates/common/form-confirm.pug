@@ -1,0 +1,59 @@
+form.form__confirm
+    .wrap__label--radio
+        label.confirm__label--radio     
+            input(class="confirm__input--radio "  required title="Выбере одну из доставок"  type="radio" name="shipping")
+            span.radio-custom
+            .confirm--radio Бесплатная доставка
+                
+        label.confirm__label--radio
+            input(class="confirm__input--radio " required title="Выбере одну из доставок"   type="radio" name="shipping")
+            span.radio-custom
+            .confirm--radio Доставка по России
+                
+        label.confirm__label--radio
+            input(class="confirm__input--radio " required title="Выбере одну из доставок"   type="radio" name="shipping")
+            span.radio-custom
+            .confirm--radio Доставка в страны СНГ
+                
+    .grid__wrap__label--2fr
+        label.confirm__label
+            .confirm--firstName Имя
+                span.reg-important *
+            input(class="confirm__input confirm__input--firstname" required title="От 3 до 15 символов"  type="text" name="confirm_firstname")
+        label.confirm__label
+            .confirm--lastName Фамилия
+                span.reg-important *
+            input(class="confirm__input confirm__input--lastname" required title="От 3 до 25 символов"   type="text" name="confirm_lastname")
+    .grid__wrap__label--2fr
+        label.confirm__label
+            .confirm--patronymic Отчество
+                span.reg-important *
+            input(class="confirm__input confirm__input--patronymic" required title="От 3 до 15 символов"  type="text" name="confirm_patronymic")
+        label.confirm__label
+            .confirm--email Email
+                span.reg-important *
+            input(class="confirm__input confirm__input--email" required title="Поле не может быть пустым"  type="email" name="confirm_email")
+
+    .grid__wrap__label--2fr
+        label.confirm__label
+            .confirm--phone Телефон
+                span.reg-important *
+            input(class="confirm__input confirm__input--phone" required title="Поле не может быть пустым"  type="text" name="confirm_phone")
+        label.confirm__label
+            .confirm--index Индекс
+                span.reg-important *
+            input(class="confirm__input confirm__input--index" title="Поле не может быть пустым"  type="text" name="confirm_index")
+    .grid__wrap__label--1fr
+        label.confirm__label
+            .confirm--address Адрес доставки
+                span.reg-important *
+            input(class="confirm__input confirm__input--address" required title="Поле не может быть пустым" type="text" name="reg_address")
+    .block__order-comment
+        textarea(name="order-comment", class="order-comment" placeholder="Комментарии к заказу")
+    
+    .confirm__button 
+        a(href="cart-oneclick.html" class="next-cart") 
+            svg.next-cart-svg
+                use(xlink:href="assets/sprite/sprite.svg#prev") 
+            |Вернуться в корзину
+        input(class="next-completion-button" type="submit" value="Далее"  name="next-completion-button")

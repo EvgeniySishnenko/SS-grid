@@ -1,0 +1,103 @@
+.registration
+    position relative 
+    width 100%
+    min-height 450px 
+    margin-top 80px
+    +adapt(660px)
+       min-height 460px 
+    +adapt(650px)
+       min-height 650px
+    +adapt(560px)
+       min-height 690px   
+.wrap__reg
+    position absolute
+    width 100%
+    margin-bottom -1200px
+    bottom 0
+    tran(margin, 0.8s)
+.wrap__reg-active
+    background-color #fff
+    border-top 2px solid black
+    border-left 1px solid #d8d8d8
+    border-right 1px solid #d8d8d8
+    border-bottom 1px solid #d8d8d8
+    padding 20px 20px 20px 20px
+    margin-bottom 0
+    height auto
+.block__form-reg
+    display flex 
+    justify-content center
+    align-items center
+.form__reg
+    width 70%
+    +adapt(950px)
+        width 100%
+.reg__input
+    width 100%
+    height 35px
+    border 1px solid #d8d8d8
+    outline none
+    &:focus 
+        border 1px solid dark
+.wrap__label 
+    display flex
+    justify-content space-between
+    width 100%
+    margin-top 15px
+    .reg__label
+        width 48%
+    +adapt(650px)
+        flex-wrap wrap
+        .reg__label
+            width 100%
+.block__address
+    width 100%
+    margin-top 15px
+    .reg__label
+        width 100%
+.reg__label
+    cursor pointer
+    font(Rr, 16px)
+.reg__button
+    width 100%
+.reg__input--button
+    width 48%
+    border none
+    outline none 
+    display inline-block
+    margin-top 20px
+    &:focus
+        border none
+        outline none
+    +adapt(400px)
+        width 100%
+.reg__close
+    position absolute
+    top 20px
+    right 10px
+    font(Rr, 12px)
+    tran(color)
+    cursor pointer
+    text-transform uppercase
+    &:hover
+        color blue
+        .reg__close--svg
+            fill blue 
+.reg__close--svg
+    fill dark 
+    tran(fill)
+    width 9px
+    height 9px
+    margin-right 4px
+.reg-important
+    color #ea5979
+.reg-closed--link
+    margin-left 10px
+    font(Rr, 16px)
+    tran(color)
+    &:hover
+        color blue
+    +adapt(400px)
+        display block
+        margin-top 10px
+        text-align center

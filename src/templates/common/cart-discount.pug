@@ -1,0 +1,31 @@
+.cart__discount-grid
+    .cart__discount--left
+        .promocode
+            .block__title-text Промокод
+            form.form__promocode
+                input(type="text" class="promocode-input" required name="promocode-input")
+                input(type="submit" class="button__link promocode__button" value="Применить")
+        .points
+            .block__title-text Программа лояльности
+            .block--shrt_text
+                a(href="account.html" class="points__link") Авторизуйтесь&nbsp;
+                | чтобы воспользоваться баллами, которые вам были начисленны после регистрации(
+                a(href="#" class="points__link") узнать подробнее&nbsp;
+                    | ) 
+            .points__button
+                a(class="points__button--link" href="#") Использовать баллы (
+                    span.points__button--span 1000&nbsp;
+                        |)
+    .cart__discount--right
+        .wrap__total
+            .block__title-text Товары на сумму:
+            .block__title-total 3199 руб.
+        .wrap__total.wrap__total--border
+            .block__title-total Скидка Sticky Sisters
+            .block__title-total 399 руб.
+        .wrap__total.wrap__total--color
+            .block__title-total Всего вы экономите
+            .block__title-total 399 руб.
+        .wrap__total.wrap__total--bottom
+            .block__title-text Итого
+            .block__title-total 3199 руб.

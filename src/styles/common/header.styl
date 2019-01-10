@@ -1,0 +1,222 @@
+.grid__header
+    dis()
+    gtc(1fr)
+    gtr(40px minmax(70px, auto))
+    gta("top"\
+        "bottom")
+    +adapt(320px)
+        grid-template-columns 320px
+.header__top 
+    grid-area top
+    background-color blue
+    
+.grid__header__top
+    dis()
+    gtc(minmax(1fr, auto) minmax(1fr, auto))
+    gta("social options")
+    gtr(40px)
+    center(y)
+.header__social
+    grid-area social
+
+.header__social--list
+    display flex    
+.header__social--item,
+.header__social--list
+    height 27px
+.header__social--item
+    margin-left 7px
+
+    &:first-child
+        margin-left 0
+
+.header__social--svg
+    width 25px
+    height 25px
+    fill white
+    transition all ease .3s
+.header__options--svg
+    width 16px
+    height 16px
+    fill white
+    transition all ease .3s
+    +adapt(380px)
+        width 22px
+        height 22px
+.header__options
+    grid-area options
+.header__options--list
+    display flex 
+    justify-content flex-end
+    height 25px
+.header__options--item
+    height 25px
+    margin-left 10px
+
+    &:first-child
+        margin-left 0
+    
+.header__options--auth_link
+    display none
+.header__options--link
+    display flex
+    align-items center
+    font(Rb, 16px, white)
+    text-decoration none
+.header__options--svg
+    margin-right 5px
+
+.header__social--link
+    &:hover
+        .header__social--svg 
+            fill dark
+.header__options--link
+    transition all ease .5s
+    &:hover
+        color dark
+        .header__options--svg 
+            fill dark
+
+.header__bottom
+    grid-area bottom
+    border-bottom 2px solid rgba(242,242,242,1);
+.grid__header__bottom
+    dis()
+    gtc(repeat(4, minmax(1fr, auto)))
+    gta("logo menu menu cart")
+    gtr(minmax(70px, auto))
+    center(y)
+    +adapt(580px)
+        rid-template-columns repeat(2, minmax(1fr, auto))
+        grid-template-rows auto auto
+        grid-template-areas "logo logo"\
+                            "menu cart"
+        grid-gap 15px
+.header__logo
+    grid-area logo
+    +adapt(580px)
+        margin-top 15px
+.menu__grid--area
+    grid-area menu
+    +adapt(580px)
+        margin-bottom 15px
+.home__link
+    display flex
+    align-items center
+    height 50px
+    text-decoration none
+.name-shop
+    margin-left 10px
+    font(Rb, 20px)
+.header__cart
+    position relative
+    grid-area cart
+    +adapt(580px)
+        margin-bottom 15px
+    &:hover
+        .cart_hover 
+            display block
+            +adapt(450px)
+                display none       
+.header__cart--link
+    display flex 
+    align-items center
+    justify-content flex-end
+    text-decoration none
+    font(Rr, 15px)
+    transition color ease .3s
+.header__cart--svg
+    width 20px
+    height 20px
+    fill blue
+.header__cart--text
+    font(Rb, 14px, blue)
+    text-transform uppercase
+
+.header__menu
+    +adapt(992px)
+        display none
+.header__menu--list
+    display flex
+    align-items center
+    justify-content center
+.header__menu--item 
+    margin-left 10px
+    position relative
+    &:first-child
+        margin-left 0
+    &.header__menu--item-active
+        .header__menu--link
+            color blue
+    &:hover
+        .header__submenu--list
+            display block 
+
+.header__menu--link
+    font(Rb, 13px)
+    text-transform uppercase
+    transition color ease .3s
+    &:hover
+        color blue
+        .header__submenu--list
+            display block
+.header__submenu--list
+    display none
+    position absolute
+    width 230px
+    height auto
+    box-shadow 0px 2px 7px -1px rgba(0,0,0,0.67)
+    background-color white
+    border-radius 5px
+    z-index 30
+.header__submenu--item
+    width 80%
+    margin 10px auto
+    &:first-child
+        margin-top 20px
+    &:last-child
+        margin-bottom 20px
+.header__submenu--link
+    font(Rr,15px)
+    transition color ease .3s
+    &:hover
+        color blue
+.header__options--text,
+.header__options--auth_name
+    +adapt(380px)
+        display none
+.btn__mobile
+    display none
+    +adapt(992px)
+        width 100%
+        display block
+        position relative
+        cursor pointer
+        &::before
+            position absolute
+            content "Меню"
+            left 30px
+            top 50%
+            transform translateY(-50%)
+            font(Rm, 17px)
+   
+.btn__mobile-line
+    width 25px
+    height 3px
+    border-radius 5px
+    background-color dark
+    margin-top 3px
+
+    &:first-child
+        margin-top 0       
+.header__scroll-fixed
+    position fixed
+    top 0
+    left 0
+    right 0
+    z-index 30
+    background-color #fff
+    grid-template-rows minmax(70px, auto)
+    grid-template-areas "bottom"
+    .header__top
+        display none

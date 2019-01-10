@@ -1,0 +1,145 @@
+.form__confirm
+    width 100%
+    margin-top 10px
+.confirm__label
+    width 100%
+    cursor pointer
+    font(Rr, 16px)
+    
+.confirm__input
+    width 100%
+    height 35px
+    border 1px solid #d8d8d8
+    outline none
+    border-radius 5px
+
+    &:focus 
+        border 2px solid rgb(25,144,198)
+.block__address
+    width 100%
+    .confirm__label
+        width 100%
+.confirm__input--address
+    width 100%
+.confirm__button
+    width 100%
+    display flex 
+    justify-content space-between
+    align-items center 
+    margin-top 30px
+    margin-bottom 40px
+    +adapt(540px)
+       justify-content center 
+       flex-direction column
+       
+.next-cart
+    font(Rr, 16px, rgb(25,144,198))
+    tran(color)
+    +adapt(540px)
+        order 2
+        margin-top 20px
+    &:hover
+        color darken(rgb(25,144,198), 15%)
+.next-cart-svg
+    fill rgb(25,144,198)
+    width 12px
+    height 10px
+    tran(fill)
+    &:hover
+        fill darken(rgb(25,144,198), 15%)
+.next-completion-button
+    display block
+    width 200px
+    height 50px
+    background-color rgb(25,144,198)
+    font(Rr,16px, white)
+    display flex 
+    align-items center 
+    justify-content center
+    transition background-color ease .2s
+    cursor pointer
+    border none
+    outline none
+    cursor pointer
+    border-radius 5px
+    +adapt(540px)
+        order 1
+    &:focus
+        border none
+        outline none
+    &:hover 
+        background-color  darken(rgb(25,144,198), 15%)
+.wrap__label--radio
+    width 100%
+.confirm__label--radio
+    width 100%
+    display flex 
+    align-items center 
+    margin-top 10px
+.confirm--radio
+    margin-left 10px
+    font(Rr,16px, dark)
+
+.confirm__input--radio
+    &:checked + .radio-custom
+        &::before 
+            content: "";
+            display: block;
+            position: absolute;
+            top: 3px;
+            right: 3px;
+            bottom: 3px;
+            left: 3px;
+            background: rgb(25,144,198);
+            border-radius: 50%;
+            cursor: pointer;	
+
+.confirm__input--radio
+    &:checked 
+        &+ .radio-custom
+            &::before 
+                border-radius 50%
+                cursor pointer
+                
+
+
+.confirm__label--radio
+    cursor pointer
+.confirm__input--radio
+	display none
+
+.radio-custom 
+	width 20px
+	height 20px
+	border-radius 7px
+	position relative
+    border 3px solid rgb(25,144,198)
+
+.radio-custom
+	display inline-block
+	vertical-align middle
+
+.block__order-comment 
+    width 100%
+.order-comment
+    width 100%
+    min-height 80px
+    margin-top 10px
+    resize vertical 
+    border 1px solid #d8d8d8
+    outline none
+    border-radius 5px
+    &:focus 
+        border 2px solid rgb(25,144,198)
+    &[placeholder]
+        padding-left 10px
+        font(Rr, 15px)
+.grid__wrap__label--2fr
+    dis()
+    gtc(47% 47%)
+    between()
+    +adapt(700px)
+        gtc(100%)
+.grid__wrap__label--1fr
+    dis()
+    gtc(1fr)

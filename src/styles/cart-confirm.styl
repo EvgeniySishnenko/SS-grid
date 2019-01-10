@@ -1,0 +1,132 @@
+.grid__container__confirm
+    dis()
+    gtc(60% 40%)
+    +adapt(992px)
+        gtc(1fr)
+.block__top--title
+    display none
+    +adapt(992px)
+        display block
+        width 100%
+        margin-top 50px
+        text-align center 
+.block__inside--title
+    +adapt(992px)
+        display none
+
+.confirm__title-link
+   font(Rr,30px, dark) 
+.h1__title 
+    padding 0
+    margin 0
+.confirm-left
+    width 100%
+    padding-right 60px
+    padding-left 20px
+    padding-top 50px
+    +adapt(992px)
+        padding-left 0
+        padding-right 0
+        width 100%
+        margin 0 auto
+        padding-top 0
+        order 2 
+    +adapt(480px)
+        width 100%
+.block__confirm-header
+    width 100%
+    margin-top 10px
+    display flex 
+    justify-content space-between
+    align-items center
+    height 30px
+    +adapt(684px)
+        display block
+.confirm-link 
+    font(Rr, 16px, rgb(25,144,198))
+    tran(color)
+    &:hover
+        color darken(rgb(25,144,198), 15%)
+.contact-information
+    width 100%
+    display flex
+    margin-top 10px
+    display none
+.block__confirm--pic
+    background-color rgb(216,216,216)
+    width 55px
+    height 55px
+    position relative
+    border-radius 10px
+.wrap__confirm--pic--svg
+    background-color rgb(255,255,255)
+    width 50px
+    height 50px
+    position absolute
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+    border-radius 50%
+
+.confirm--pic--svg
+    width 50px
+    height 50px
+    fill rgb(25,144,198)
+    position absolute
+    top -5px
+.block__confirm--inform
+    margin-left 20px
+.confirm-fio
+    font(Rr, 16px, dark)
+.block__button--show-confirm-right
+    display none  
+    +adapt(992px)
+        display block
+        margin-top 10px
+        width 100%
+        height 60px
+        border-top 1px solid #d8d8d8
+        border-bottom 1px solid #d8d8d8
+        background-color rgb(250,250,250)
+        cursor pointer
+    
+.block__button-container
+    +adapt(992px)
+        width 100%
+        margin 0 auto
+        display flex 
+        justify-content space-between
+        align-items center
+        height 100% 
+        padding-left: 10px
+        padding-right: 10px
+        
+    +adapt(380px)
+        flex-direction column
+.block__button--wrap-left
+    font(Rr, 16px, rgb(25,144,198))
+    display flex
+.block__button--wrap-right
+    font(Rm, 16px, dark)
+.wrap-left--text-hide
+    display none
+.wrap-arrows--svg
+    width 10px
+    height 10px
+    fill rgb(25,144,198)
+.wrap-left--svg
+    width 15px
+    height 15px
+    fill rgb(25,144,198)
+    margin-right 5px
+                        
+.block__button--show-confirm-right--active
+    .wrap-left--text-hide
+        display block
+        font(Rr, 16px, darken(rgb(25,144,198), 25%))
+        .wrap-arrows--svg
+            fill darken(rgb(25,144,198), 25%)
+    .wrap-left--svg
+            fill darken(rgb(25,144,198), 25%)
+    .wrap-left--text-show
+        display none                 

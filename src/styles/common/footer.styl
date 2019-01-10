@@ -1,0 +1,53 @@
+.footer
+    margin-top 40px
+.footer__options
+    width 100%
+    height auto
+.footer__options--list-grid
+    dis()
+    gtc(repeat(4, 1fr))
+    between()
+    gap 20px
+    +adapt(910px)
+        gtc(repeat(2, 1fr))
+        center(x)
+    +adapt(580px)
+        gtc(1fr)
+
+.footer__options--item
+    width 100%
+    background-color white
+    padding-left 20px
+.footer__title
+    font(Rm, 16px)
+    margin-top 20px
+.footer__company
+    font(Rb, 20px)
+    margin-top 5px
+.footer__descr
+    font(Rr, 16px)
+    margin-top 10px
+    margin-bottom 10px
+.footer__options--sub-items
+    margin-top 10px
+    +adapt(910px)
+        margin-bottom 20px
+.footer__options--sub-link
+    font(Rr, 16px)
+    &:hover
+        tran(color)
+        color blue
+.footer__bottom
+    width 100%
+    height 60px
+.footer__information
+    width 100%
+    height 100%
+    display flex
+    justify-content center
+    align-items center
+    font(Rr, 16px)
+    +adapt(345px)
+        flex-direction column
+.footer__information--link
+    font(Rr, 16px)

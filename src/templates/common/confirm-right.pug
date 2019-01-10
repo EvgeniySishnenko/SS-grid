@@ -1,0 +1,27 @@
+.orders__cart
+    .orders__cart__product-grid
+        ul.orders__product--list
+            - for (var i = 0; i < 10; i++){
+                li.orders__product--item
+                    .orders__product--pic   
+                        img(src="assets/images/prod.png" class="orders__product-img")
+                        .wrap__orders__count
+                            .orders__count 3
+                    .orders__product--desc
+                        .orders__product--title Наклеки Sticky Sisters
+                    .orders__product--total 390 руб.
+            -}
+    .order__total
+        .wrap__sub
+            .wrap__sub-total
+                .block__title-total Промежуточный итог
+                .block__title-total 100
+            .wrap__sub-total
+                .block__title-total Доставка
+                .block__title-total Бесплатно
+        .wrap__order
+            .order__total-price
+                .block__title-text Итого
+                .block__title-text 3190 руб.
+
+        

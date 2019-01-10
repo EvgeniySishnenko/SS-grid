@@ -1,0 +1,127 @@
+.grid__home
+    display grid 
+    grid-template-columns 27% 73%
+    grid-template-rows auto 
+    grid-template-areas "content__left content__right content__right"
+    +adapt(992px)
+        gap 30px 0
+        grid-template-columns 100%
+        grid-template-rows auto auto 
+        grid-template-areas  "content__right"\
+                          "content__left"   
+.content__left
+    grid-area content__left
+.content__right
+    grid-area content__right
+.categories
+    width 100%
+.categories__shrt_text  
+    width 100%
+    height 50px
+    padding-left 20px
+    display flex 
+    align-items center
+    background-color blue
+    font(Rb, 16px, #fff)
+.categories__list
+    width 90%
+    margin 0 auto
+.categories__item
+    width 100%
+    border-bottom 2px solid #ededed
+    height 40px
+    display flex 
+    align-items center
+    
+.categories__link
+    font(Rr, 16px)
+    transition color ease .3s
+    &:hover
+        color blue 
+.slider
+    position relative
+    width 746px
+    height 435px
+    margin 0 auto
+    +adapt(1200px)
+        width 646px
+        height 378px
+    +adapt(992px)
+        width 746px
+        height 435px
+    +adapt(992px)
+        width 646px
+        height 378px
+    +adapt(680px)
+        width 576px
+        height 338px
+    +adapt(612px)
+        width 476px
+        height 280px
+    +adapt(510px)
+        width 376px
+        height 220px
+    +adapt(410px)
+        width 315px
+        height 186px
+    +adapt(340px)
+        width 290px
+        height 178px
+.slider__images
+    position relative
+    overflow hidden
+    width 100%
+    height 100%
+.slider__list
+    width 100%
+    height 100%
+    white-space nowrap
+    font-size 0
+    position absolute
+    top 0
+    left 0
+    
+.slider__item 
+    width 100%
+    height 100%
+    display inline-block  
+.slider__item--img  
+    max-width 100%
+.controls
+    width 100%
+    display flex
+    justify-content space-between
+    position absolute
+    top 50%
+    transform translateY(-50%)
+.next-svg
+    width 35px
+    height 35px
+    cursor pointer
+.prev-svg
+    width 35px
+    height 35px
+    cursor pointer
+.slider_dots
+    display flex 
+    justify-content center
+    width 100%
+.slider__dot-item
+    margin-left 10px
+
+    &:first-child
+        margin-left 0
+.slider__dot-circle 
+    width 13px
+    height 13px
+    background-color blue
+    border-radius 50%
+    cursor pointer
+    transition  background-color ease .3s
+
+    &:hover
+         background-color gray
+.active__dot
+    .slider__dot-circle 
+        background-color gray
+        border-radius 50%

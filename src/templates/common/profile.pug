@@ -1,0 +1,147 @@
+.profile
+    .block__title-text.block__title-text--profile Добро пожаловать, Евгений
+    .block--shrt_text На страницу данного раздела, 
+            |можно редактировать иформацию о пользователе.
+            |Также содержится информация о покупках
+    .wrap__edit-information
+        .edit
+            .block__title-text Управление аккаутом
+            ul.edit-list
+                li.edit-item#firstname
+                    .edit-title Имя пользователя
+                    .edit-value(data-attr="firstname") Евгений
+                    .block__edit--svg
+                        svg.edit--svg
+                            use(xlink:href="assets/sprite/sprite.svg#pen")
+                    .block__edit__form
+                        form.edit__form
+                            input(type="text" data-inner="firstname" class="edit__input" value="Евгений")
+                            input(type="submit" class=" button__link edit__save-button")
+                            a(href="firstname" class="edit-cancel") 
+                                svg.edit-cancel--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#closed")
+                        .error__container
+                
+                li.edit-item#lastname
+                    .edit-title Фамилия пользователя
+                    .edit-value(data-attr="lastname") Евгений
+                    .block__edit--svg
+                        svg.edit--svg
+                            use(xlink:href="assets/sprite/sprite.svg#pen")
+                    .block__edit__form
+                        form.edit__form
+                            input(type="text" data-inner="lastname" class="edit__input" class="edit__input" value="Евгений")
+                            input(type="submit" class=" button__link edit__save-button")
+                            a(href="lastname" class="edit-cancel") 
+                                svg.edit-cancel--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#closed")
+                        .error__container 
+                li.edit-item#patronymic
+                    .edit-title Отчество пользователя
+                    .edit-value(data-attr="patronymic") Евгений
+                    .block__edit--svg
+                        svg.edit--svg
+                            use(xlink:href="assets/sprite/sprite.svg#pen")
+                    .block__edit__form
+                        form.edit__form
+                            input(type="text" data-inner="patronymic"  class="edit__input" value="Евгений")
+                            input(type="submit" class=" button__link edit__save-button")
+                            a(href="patronymic" class="edit-cancel") 
+                                svg.edit-cancel--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#closed")
+                        .error__container 
+                li.edit-item#email
+                    .edit-title Email пользователя
+                    .edit-value(data-attr="email") Евгений
+                    .block__edit--svg
+                        svg.edit--svg
+                            use(xlink:href="assets/sprite/sprite.svg#pen")
+                    .block__edit__form
+                        form.edit__form
+                            input(type="text" data-inner="email" class="edit__input" value="Евгений")
+                            input(type="submit" class=" button__link edit__save-button")
+                            a(href="email" class="edit-cancel")
+                                svg.edit-cancel--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#closed")
+                        .error__container 
+                li.edit-item#phone
+                    .edit-title Телефон пользователя
+                    .edit-value(data-attr="phone") Евгений
+                    .block__edit--svg
+                        svg.edit--svg
+                            use(xlink:href="assets/sprite/sprite.svg#pen")
+                    .block__edit__form
+                        form.edit__form
+                            input(type="text" data-inner="phone" class="edit__input" value="Евгений")
+                            input(type="submit" class=" button__link edit__save-button")
+                            a(href="phone" class="edit-cancel") 
+                                svg.edit-cancel--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#closed")
+                        .error__container
+                li.edit-item#index
+                    .edit-title Индекс пользователя
+                    .edit-value(data-attr="index") Евгений
+                    .block__edit--svg
+                        svg.edit--svg
+                            use(xlink:href="assets/sprite/sprite.svg#pen")
+                    .block__edit__form
+                        form.edit__form
+                            input(type="text" data-inner="index"  class="edit__input" value="Евгений")
+                            input(type="submit" class=" button__link edit__save-button")
+                            a(href="index" class="edit-cancel") 
+                                svg.edit-cancel--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#closed")
+                        .error__container
+                li.edit-item#address
+                    .edit-title Адрес доставки 
+                    .edit-value(data-attr="address")  Пятницкое шоссе дом 110 корпус 2 кв. Москва район Митино Московская область
+                    .block__edit--svg
+                        svg.edit--svg
+                            use(xlink:href="assets/sprite/sprite.svg#pen")
+                    .block__edit__form
+                        form.edit__form
+                            input(type="text" data-inner="address" class="edit__input" value="Пятницкое шоссе дом 110 корпус 2 кв. Москва район Митино Московская область")
+                            input(type="submit" class=" button__link edit__save-button")
+                            a(href="address" class="edit-cancel")
+                                svg.edit-cancel--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#closed")
+                        .error__container
+                li.edit-item#pass
+                    .edit-title Изменить пароль
+                    .edit-value Евгений
+                    .block__edit--svg
+                        svg.edit--svg
+                            use(xlink:href="assets/sprite/sprite.svg#pen")
+                    .block__edit__form
+                        form.edit__form
+                            input(type="text" class="edit__input edit__input--pass" placeholder="Новый пароль")
+                            input(type="text" class="edit__input edit__input--newpass" placeholder="Старый пароль")
+                            input(type="submit" class=" button__link edit__save-button")
+                            a(href="pass" class="edit-cancel")
+                                svg.edit-cancel--svg
+                                    use(xlink:href="assets/sprite/sprite.svg#closed")
+                        .error__container   
+   
+
+
+
+
+
+
+
+        .information  
+            .block__title-text Дебит и кредит
+            .block--shrt_text Это новый раздел вашего аккаута. Информация может не соответсовать действительности, но лишь на время. Приносим извинения)
+                ul.information--list
+                    li.information--item 
+                        span.information-title Всего начисленно баллов
+                        span.information-value 1000
+                    li.information--item 
+                        span.information-title Всего потраченно баллов
+                        span.information-value 1000
+                    li.information--item 
+                        span.information-title Всего купленно товаров
+                        span.information-value 1000
+                    li.information--item 
+                        span.information-title Купленно товаров на сумму
+                        span.information-value 1000

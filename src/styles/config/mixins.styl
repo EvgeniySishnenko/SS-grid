@@ -1,0 +1,30 @@
+adapt(num) 
+   @media screen and (max-width: num)
+        {block}
+
+font(f,s,c=dark)
+    font-family f
+    font-size s
+    color c
+tran(property=all, time=.2s, anim=ease)
+    transition property anim time
+dis(val=grid)
+    display val
+gtc(val)
+    grid-template-columns val
+gtr(val)
+    grid-template-rows val
+gta(val)
+    grid-template-areas val
+between()
+    justify-content space-between
+
+center(val)
+    if val == x 
+        justify-content center
+    if val == y 
+        align-items center
+    if val == xy 
+        align-items center
+        justify-content center
+    

@@ -1,0 +1,81 @@
+.cart__discount-grid
+    dis()
+    gtc(1fr 1fr)
+    between()
+    +adapt(768px)
+        gtc(1fr)
+        gap 20px
+.cart__discount--left,
+.cart__discount--right
+    width 100%
+.cart__discount--left
+    border-right 2px solid #d8d8d8
+    +adapt(768px)
+        border-right none
+.form__promocode
+    width 100%
+    display flex
+    margin-top 10px
+    margin-bottom 10px
+.promocode-input
+    width 60%
+    height 35px
+    border 1px solid #d8d8d8
+    outline none
+    &:focus 
+        border 1px solid dark
+.promocode__button
+    width 30%
+    height 35px
+    margin-left 30px
+    margin-right 30px
+    border none
+    outline none 
+    &:focus
+        border none
+        outline none
+.points__link
+    font(Rr, 16px, blue)
+.points__button
+    width 100%
+    margin-top 10px
+.points__button--link
+    display block
+    width 260px
+    height 40px
+    font(Rr, 16px, blue)
+    border 1px dashed dark
+    display flex 
+    justify-content center 
+    align-items center
+    border-radius 5px
+    tran(all)
+    &:hover
+        border 1px solid dark
+        box-shadow: 0px 0px 5px -1px rgba(79,79,79,1);
+
+.cart__discount--right
+    padding-left 10px  
+    position relative 
+    +adapt(768px) 
+        padding-left 0 
+        min-height 80px
+        height auto
+.wrap__total
+    width 100%
+    display flex
+    justify-content space-between
+    margin-top 10px    
+.wrap__total--bottom
+    position absolute
+    bottom 0
+    padding-right 20px
+    +adapt(768px) 
+        padding-right 0
+        position relative
+.wrap__total--border
+    padding-bottom 10px
+    border-bottom 2px solid dark
+.wrap__total--color
+    color #e84e56
+    

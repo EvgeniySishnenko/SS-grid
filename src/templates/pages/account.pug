@@ -1,0 +1,68 @@
+extends ../template
+
+block variables
+    - var title = 'Мой аккаунт'
+
+block content 
+    .grid__container--universal
+        include ../common/header.pug
+        
+        section.section.section__area
+            .container.container__account
+                include ../common/navigation.pug
+
+                .block__title--account
+                    h2.h2__title--account Аккаунт
+                include ../common/profile.pug
+                .block__account
+                    .wrap__account
+                        .account__create
+                            .block__title-text Нет аккаутна?
+                            .block--shrt_text Не беда. Регистрация простая и бесплатная!
+                            ul.account__create--list
+                                li.account__create--item 
+                                    span.account__create--mark &#10004;
+                                    |Быстрая проверка
+                                li.account__create--item 
+                                    span.account__create--mark &#10004;
+                                    |На счет 1000 руб.
+                                li.account__create--item 
+                                    span.account__create--mark &#10004;
+                                    |Сохранение адреса доставки(экономия времени)
+                                li.account__create--item 
+                                    span.account__create--mark &#10004;
+                                    |Добавление товары в избранное 
+                            .account__create--button
+                                a(href="#").button__link.create--button Создать аккаунт
+                                
+                        .account__auth
+                            .block__title-text Уже зарегистрированы?
+                            .block__form
+                                form.form__auth
+                                    label.auth__label
+                                        .auth--email Email
+                                        input(class="auth__input--email" required  type="text" name="auth_email")
+                                    label.auth__label
+                                        .auth--pass Пароль
+                                        input(class="auth__input--pass" required  type="password"  name="auth_pass")
+                                    .auth__button
+                                        input(class="button__link auth__input--button " type="submit" value="Авторизоваться"  name="auth_button")
+                                        a(href="#" class="forgot--link") Зыбыли пароль?
+                    .forgot
+                        include ../common/forgot.pug
+                .registration
+                    include ../common/registration.pug
+
+
+
+
+
+
+        include ../common/footer.pug
+        include ../common/menu-mobile.pug
+        
+    
+
+
+
+                                

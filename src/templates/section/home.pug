@@ -1,0 +1,29 @@
+section.section.section__home
+    .container.grid__home
+        .content__left
+            aside.aside
+                .categories
+                    .categories__shrt_text Категории
+                    ul.categories__list
+                        - for (var i=0; i<5; i++) {     
+                            li.categories__item
+                                a(href="#").categories__link Наклейки  
+                        -}
+            
+        .content__right
+            .slider
+                .slider__images
+                    ul.slider__list
+                        - for (var i = 0; i < 6; i++) {
+                            li(data=""+i).slider__item
+                                img(src="assets/images/1.png" alt="" title="").slider__item--img
+                        - }
+                .controls 
+                    .prev 
+                        svg.prev-svg.slider__btn 
+                            use(xlink:href="assets/sprite/sprite.svg#prev")
+                    .next
+                        svg.next-svg.slider__btn
+                            use(xlink:href="assets/sprite/sprite.svg#next")
+                ul.slider_dots
+                      

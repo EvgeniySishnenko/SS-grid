@@ -1,0 +1,47 @@
+footer.footer
+    .container
+        .footer__options
+            ul.footer__options--list-grid
+                li.footer__options--item.foot-item1
+                    .footer__title О нашей компании
+                    h3.footer__company Sticky Sisters
+                    .footer__descr Душа моя озарена неземной радостью, 
+                                    |как эти чудесные весенние утра, 
+                                    |которыми я наслаждаюсь от всего сердца. 
+                                    |Я совсем один и блаженствую в здешнем краю, 
+                                    |словно созданном для таких, как я. Я так счастлив, 
+                                    |мой друг, так упоен ощущением покоя, что искусство 
+                                    |мое страдает от этого. 
+                                   
+                li.footer__options--item.foot-item2
+                    .footer__title Категории
+                    ul.footer__options--sub-list
+                        - for (var i= 0; i < 6; i++) {
+                            li.footer__options--sub-items
+                                a.footer__options--sub-link(href="#") Стикеры
+                        -}
+                li.footer__options--item.foot-item3
+                    .footer__title Информация
+                    ul.footer__options--sub-list
+                        - for (var i= 0; i < 6; i++) {
+                            li.footer__options--sub-items
+                                a.footer__options--sub-link(href="#") Доставка
+                        -}
+                li.footer__options--item.foot-item4
+                    .footer__title Мой профиль
+                    ul.footer__options--sub-list
+                        li.footer__options--sub-items
+                            a.footer__options--sub-link(href="#") Профиль
+                        li.footer__options--sub-items
+                            a.footer__options--sub-link(href="#") Выйти
+                        li.footer__options--sub-items
+                            a.footer__options--sub-link(href="registration.html") Регистрация
+                        li.footer__options--sub-items
+                            a.footer__options--sub-link(href="#") Войти
+
+        .footer__bottom
+            .footer__information
+                span.footer__information--company &copy; 
+                    a(href="https://use-web.ru" target="_blank").footer__information--link use-web &nbsp;	 
+                span.footer__information--care с заботой  для Sticky Sisters
+

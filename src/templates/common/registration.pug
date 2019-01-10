@@ -1,0 +1,51 @@
+.wrap__reg
+    .block__title-text Создание аккаунта
+    .block__form.block__form-reg
+        form.form__reg
+            .wrap__label 
+                label.reg__label
+                    .reg--email Имя
+                        span.reg-important *
+                    input(class="reg__input reg__input--firstname" required title="От 3 до 15 символов"  type="text" name="reg_firstname")
+                label.reg__label
+                    .reg--email Фамилия
+                        span.reg-important *
+                    input(class="reg__input reg__input--lastname" required title="От 3 до 25 символов"   type="text" name="reg_lastname")
+            .wrap__label     
+                label.reg__label
+                    .reg--email Отчество
+                        span.reg-important *
+                    input(class="reg__input reg__input--patronymic" required title="От 3 до 15 символов"  type="text" name="reg_patronymic")
+                label.reg__label
+                    .reg--email Email
+                        span.reg-important *
+                    input(class="reg__input reg__input--email" required title="Поле не может быть пустым"  type="email" name="reg_email")
+            .wrap__label
+                label.reg__label
+                    .reg--pass Пароль
+                        span.reg-important *
+                    input(class="reg__input reg__input--pass" required title="Не менее 7 символов"  type="password" name="reg_pass")
+                label.reg__label
+                    .reg--repeatpass Повторите пароль
+                        span.reg-important * 
+                    input(class="reg__input reg__input--repeatpass" required title="Поле не может быть пустым"  type="password" name="reg_repeatpass")
+            .wrap__label
+                label.reg__label
+                    .reg--phone Телефон
+                        span.reg-important *
+                    input(class="reg__input reg__input--phone" required title="Поле не может быть пустым"  type="text" name="reg_phone")
+                label.reg__label
+                    .reg--index Индекс
+                    input(class="reg__input reg__input--index" type="text" name="reg_index")
+            .block__address
+                label.reg__label
+                    .reg--address Адрес доставки
+                    input(class="reg__input reg__input--address" type="text" name="reg_address")
+            .registration__recaptcha.g-recaptcha
+            .reg__button
+                input(class="button__link reg__input--button" type="submit" value="Создать аккаунт"  name="reg_button")
+                a(href="#" class="reg-closed--link") Закрыть
+    .reg__close
+        svg.reg__close--svg
+            use(xlink:href="assets/sprite/sprite.svg#closed")
+        | Закрыть

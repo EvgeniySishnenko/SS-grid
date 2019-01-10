@@ -1,0 +1,41 @@
+.popup__product
+    .popup__product__card
+        .popup__product--content
+            .popup__product__image
+                .wrap__popup-image
+                    img(src="assets/images/product-popup.png" alt="" title="").popup-image
+            .popup__product__description
+                .popup__product--title
+                    a.popup__product--title-link(href="#") Набор красивых наклеек
+                .popup__product--availability 
+                    span.popup__product--availability__prop Наличие: 
+                    span.popup__product--availability__val есть в наличии 
+                .popup__product--price.popup-discount
+                    .popup__product--price-count 130 руб.
+                    .popup__product--price-discount 99 руб.
+                .popup__product--text
+                    p Что это такое?
+                    p Душа моя озарена неземной радостью, <br>
+                        |как эти чудесные весенние утра, <br>
+                        |которыми я наслаждаюсь от всего сердца.<br> 
+                        |Я совсем один и блаженствую в здешнем краю 
+                            
+                .popup__product--quantity
+                    span.quantity-shrt_text Выберете кол-во:
+                    .popup__product--plus
+                        svg.popup__product__plus--svg
+                            use(xlink:href="assets/sprite/sprite.svg#plus")
+                    input(type="text" value="1").popup__product--input
+                    .popup__product--minus
+                        svg.popup__product__minus--svg
+                            use(xlink:href="assets/sprite/sprite.svg#minus")
+                .block__button.block__button--popup__product
+                    a(href="cart.html" class="button__link popup__product__add_button") Добавить в корзину
+                .know__more
+                    a.know__more--link(href="#") Посметреть всю информацию
+        .popup__product--closed
+            svg.popup__product--closed
+                use(xlink:href="assets/sprite/sprite.svg#closed")
+
+
+

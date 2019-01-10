@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+  </head>
+  <body>  
+    <div class="grid__container--index">
+      <header class="header grid__header">
+        <div class="header__top">
+          <div class="container grid__header__top">
+            <div class="header__social">
+              <ul class="header__social--list">
+                      <li class="header__social--item"><a class="header__social--link" href="https://www.facebook.com/stickysisters.ru/" target="_blank">
+                          <svg class="header__social--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#fcb"></use>
+                          </svg></a></li>
+                      <li class="header__social--item"><a class="header__social--link" href="https://www.instagram.com/sticky_sisters/" target="_blank">
+                          <svg class="header__social--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#inst"></use>
+                          </svg></a></li>
+                      <li class="header__social--item"><a class="header__social--link" href="https://www.youtube.com/channel/UCNCwhPjC75koMs9ZmaVCD8g" target="_blank">
+                          <svg class="header__social--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#yt"></use>
+                          </svg></a></li>
+              </ul>
+            </div>
+            <div class="header__options">
+              <ul class="header__options--list">
+                <li class="header__options--item" title="Мой аккаут"><a class="header__options--link" href="account.html">
+                    <svg class="header__options--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#user"></use>
+                    </svg><span class="header__options--text">Мой аккаунт</span></a><a class="header__options--auth_link" href="#">
+                    <svg class="header__options--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#user"></use>
+                    </svg><span class="header__options--auth_name">Евгений</span></a></li>
+                <li class="header__options--item" title="Избранное"><a class="header__options--link" href="#">
+                    <svg class="header__options--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                    </svg><span class="header__options--text">Избранное</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container grid__header__bottom">
+            <div class="header__logo"><a class="home__link" href="index.html"><img class="logo-img" src="assets/images/logo.png">
+                <h2 class="name-shop">Sticky Sisters</h2></a></div>
+            <div class="menu__grid--area">
+              <nav class="header__menu">
+                <ul class="header__menu--list">
+                        <li class="header__menu--item"><a class="header__menu--link" href="index.html">Главная</a>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="#">Каталог</a>
+                          <ul class="header__submenu--list">
+                            <li class="header__submenu--item"> <a class="header__submenu--link" href="stiker.html">Стикеры</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="stickerbooki.html">Стикербуки</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="planner.html">Планеры</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="zakladki.html">Закладки</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="tags_gifts.html">Бирки на подарки</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="cards.html">Открытки</a></li>
+                          </ul>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="aktcii.html">Акции</a>
+                          <ul class="header__submenu--list">
+                            <li class="header__submenu--item"> <a class="header__submenu--link" href="aktcii.html">Дарим 1000 рублей</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="aktcii.html">Бесплатная доставка</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="aktcii.html">Промокоды</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="aktcii.html">Узнать больше</a></li>
+                          </ul>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="sale_product.html">Распродажа</a>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="dostavka.html">Доставка</a>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="o-nas.html">О нас</a>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="title_news.html">Новости</a>
+                        </li>
+                </ul>
+              </nav>
+              <div class="btn__mobile">
+                <div class="btn__mobile-line"></div>
+                <div class="btn__mobile-line"></div>
+                <div class="btn__mobile-line"></div>
+              </div>
+            </div>
+            <div class="header__cart"><a class="header__cart--link" href="cart-oneclick.html">
+                <svg class="header__cart--svg">
+                  <use xlink:href="assets/sprite/sprite.svg#cart"></use>
+                </svg><span class="header__cart--text">Корзина:&nbsp; </span><span class="header__cart--count">100 </span><span class="header__cart--rest"> &nbsp;товар(ов)</span></a>
+              <div class="cart_hover">
+                <ul class="cart_hover--list">
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="cart_hover_footer">
+                  <div class="wrap__footer">
+                    <div class="cart_hover_price"><span class="price__text">Итого: &nbsp;</span><span class="price__count">50000 руб.</span></div>
+                    <div class="block__button"><a class="button__link cart__hover__button" href="cart.html">Перейти в корзину</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section section__home">
+        <div class="container grid__home">
+          <div class="content__left">
+            <aside class="aside">
+              <div class="categories">
+                <div class="categories__shrt_text">Категории</div>
+                <ul class="categories__list">
+                  <li class="categories__item"><a class="categories__link" href="#">Наклейки  </a></li>
+                  <li class="categories__item"><a class="categories__link" href="#">Наклейки  </a></li>
+                  <li class="categories__item"><a class="categories__link" href="#">Наклейки  </a></li>
+                  <li class="categories__item"><a class="categories__link" href="#">Наклейки  </a></li>
+                  <li class="categories__item"><a class="categories__link" href="#">Наклейки  </a></li>
+                </ul>
+              </div>
+            </aside>
+          </div>
+          <div class="content__right">
+            <div class="slider">
+              <div class="slider__images">
+                <ul class="slider__list">
+                  <li class="slider__item" data="0"><img class="slider__item--img" src="assets/images/1.png" alt="" title=""></li>
+                  <li class="slider__item" data="1"><img class="slider__item--img" src="assets/images/1.png" alt="" title=""></li>
+                  <li class="slider__item" data="2"><img class="slider__item--img" src="assets/images/1.png" alt="" title=""></li>
+                  <li class="slider__item" data="3"><img class="slider__item--img" src="assets/images/1.png" alt="" title=""></li>
+                  <li class="slider__item" data="4"><img class="slider__item--img" src="assets/images/1.png" alt="" title=""></li>
+                  <li class="slider__item" data="5"><img class="slider__item--img" src="assets/images/1.png" alt="" title=""></li>
+                </ul>
+              </div>
+              <div class="controls"> 
+                <div class="prev"> 
+                  <svg class="prev-svg slider__btn"> 
+                    <use xlink:href="assets/sprite/sprite.svg#prev"></use>
+                  </svg>
+                </div>
+                <div class="next">
+                  <svg class="next-svg slider__btn">
+                    <use xlink:href="assets/sprite/sprite.svg#next"></use>
+                  </svg>
+                </div>
+              </div>
+              <ul class="slider_dots"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section__products__grid">
+        <div class="container">
+          <div class="block__title">
+            <h2 class="h2__title position-center">Популярные товары</h2>
+          </div>
+          <div class="block__products__grid">
+            <ul class="products__grid--list">
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item products__grid--sale-circle">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount">99 руб.</div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item products__grid--sale-circle">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount">99 руб.</div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item products__grid--sale-circle">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount">99 руб.</div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item products__grid--sale-circle">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount">99 руб.</div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item products__grid--sale-circle">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount">99 руб.</div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+              <li class="products__grid--item">
+                <div class="products__grid__block-image"><a class="products__grid__image--link" href="#"><img class="product__image" src="assets/images/product.png" alt="" title=""></a></div>
+                <div class="products__grid__description">
+                  <div class="block__title position-center-top"><a class="products__grid__title--link" href="#">Планер на октябрь </a></div>
+                  <div class="products__grid__price">
+                    <div class="products__grid__count">130 руб.</div>
+                    <div class="products__grid__count-discount"></div>
+                  </div>
+                </div>
+                <div class="products__grid-options">
+                  <div class="options__add-cart"><a class="add-cart--link" href="#">
+                      <svg class="add-cart--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#cart-grid"></use>
+                      </svg><span class="add-cart--shrt_text">В корзину</span></a></div>
+                  <div class="options__add-wishlist__magnifier"><a class="add-wishlist--link" title="Добавить избранное" href="#">
+                      <svg class="add-wishlist--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                      </svg></a><a class="add-magnifier--link" title="Быстрый просмотр" href="#">
+                      <svg class="magnifier--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#magnifie"></use>
+                      </svg></a></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__options">
+            <ul class="footer__options--list-grid">
+              <li class="footer__options--item foot-item1">
+                <div class="footer__title">О нашей компании</div>
+                <h3 class="footer__company">Sticky Sisters</h3>
+                <div class="footer__descr">
+                  Душа моя озарена неземной радостью, как эти чудесные весенние утра, 
+                  которыми я наслаждаюсь от всего сердца. 
+                  Я совсем один и блаженствую в здешнем краю, 
+                  словно созданном для таких, как я. Я так счастлив, 
+                  мой друг, так упоен ощущением покоя, что искусство 
+                  мое страдает от этого. 
+                </div>
+              </li>
+              <li class="footer__options--item foot-item2">
+                <div class="footer__title">Категории</div>
+                <ul class="footer__options--sub-list">
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                </ul>
+              </li>
+              <li class="footer__options--item foot-item3">
+                <div class="footer__title">Информация</div>
+                <ul class="footer__options--sub-list">
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                </ul>
+              </li>
+              <li class="footer__options--item foot-item4">
+                <div class="footer__title">Мой профиль</div>
+                <ul class="footer__options--sub-list">
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Профиль</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Выйти</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="registration.html">Регистрация</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Войти</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__information"><span class="footer__information--company">&copy; <a class="footer__information--link" href="https://use-web.ru" target="_blank">use-web &nbsp;	 </a></span><span class="footer__information--care">с заботой  для Sticky Sisters</span></div>
+          </div>
+        </div>
+      </footer>
+      <div class="block__menu__mobile">
+        <div class="block__left">
+          <ul class="menu__mobile--list">
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="index.html">Главная</a>
+                  </li>
+                  <li class="menu__mobile--item">
+                    <div class="wrap__link-plus"><a class="menu__mobile--link" href="#">Каталог</a>
+                      <div class="btn__plus">
+                        <div class="wrap__plus">
+                          <div class="btn__plus--line1"></div>
+                          <div class="btn__plus--line2"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="header__mobile__submenu--list">
+                      <li class="header__mobile__submenu--item"> <a class="header__mobile__submenu--link" href="stiker.html">Стикеры</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="stickerbooki.html">Стикербуки</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="planner.html">Планеры</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="zakladki.html">Закладки</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="tags_gifts.html">Бирки на подарки</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="cards.html">Открытки</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__mobile--item">
+                    <div class="wrap__link-plus"><a class="menu__mobile--link" href="aktcii.html">Акции</a>
+                      <div class="btn__plus">
+                        <div class="wrap__plus">
+                          <div class="btn__plus--line1"></div>
+                          <div class="btn__plus--line2"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="header__mobile__submenu--list">
+                      <li class="header__mobile__submenu--item"> <a class="header__mobile__submenu--link" href="aktcii.html">Дарим 1000 рублей</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="aktcii.html">Бесплатная доставка</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="aktcii.html">Промокоды </a></li>
+                      <li class="header__mobile__submenu--item"> <a class="header__mobile__submenu--link" href="aktcii.html">Узнать больше          </a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="sale_product.html">Распродажа</a>
+                  </li>
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="dostavka.html">Доставка</a>
+                  </li>
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="o-nas.html">О нас</a>
+                  </li>
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="title_news.html">Новости</a>
+                  </li>
+          </ul>
+        </div>
+        <div class="block__right">
+          <div class="closed">
+            <svg class="closed-svg"> 
+              <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="popup__product">
+        <div class="popup__product__card">
+          <div class="popup__product--content">
+            <div class="popup__product__image">
+              <div class="wrap__popup-image"><img class="popup-image" src="assets/images/product-popup.png" alt="" title=""></div>
+            </div>
+            <div class="popup__product__description">
+              <div class="popup__product--title"><a class="popup__product--title-link" href="#">Набор красивых наклеек</a></div>
+              <div class="popup__product--availability"> <span class="popup__product--availability__prop">Наличие: </span><span class="popup__product--availability__val">есть в наличии </span></div>
+              <div class="popup__product--price popup-discount">
+                <div class="popup__product--price-count">130 руб.</div>
+                <div class="popup__product--price-discount">99 руб.</div>
+              </div>
+              <div class="popup__product--text">
+                <p>Что это такое?</p>
+                <p>
+                  Душа моя озарена неземной радостью, <br>как эти чудесные весенние утра, <br>
+                  которыми я наслаждаюсь от всего сердца.<br> 
+                  Я совсем один и блаженствую в здешнем краю 
+                </p>
+              </div>
+              <div class="popup__product--quantity"><span class="quantity-shrt_text">Выберете кол-во:</span>
+                <div class="popup__product--plus">
+                  <svg class="popup__product__plus--svg">
+                    <use xlink:href="assets/sprite/sprite.svg#plus"></use>
+                  </svg>
+                </div>
+                <input class="popup__product--input" type="text" value="1">
+                <div class="popup__product--minus">
+                  <svg class="popup__product__minus--svg">
+                    <use xlink:href="assets/sprite/sprite.svg#minus"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="block__button block__button--popup__product"><a class="button__link popup__product__add_button" href="cart.html">Добавить в корзину</a></div>
+              <div class="know__more"><a class="know__more--link" href="#">Посметреть всю информацию</a></div>
+            </div>
+          </div>
+          <div class="popup__product--closed">
+            <svg class="popup__product--closed">
+              <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

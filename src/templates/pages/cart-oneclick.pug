@@ -1,0 +1,69 @@
+extends ../template
+
+block variables
+    - var title = 'Мой аккаунт'
+
+block content
+    .grid__container--universal
+        include ../common/header.pug
+        
+        section.section.section__area
+            .container
+                include ../common/navigation-cart.pug
+                .block__title--account 
+                    h2.h2__title--account Моя корзина
+                .cart
+                    .cart__header-grid
+                        .cart__header--product-pic Изображение 
+                        .cart__header--name Наименование 
+                        .cart__header--price Цена
+                        .cart__header--quantity Кол-во
+                        .cart__header--total Итог   
+                    .cart__body
+                        - for (var i=0; i<3; i++) {
+                            .cart__body__box-grid
+                                .cart__body--pic
+                                    img.product__image(src="assets/images/cart-pic.png" alt="" title="")
+                                
+                                .cart__body--name 
+                                    a(href="view_content.html").cart__body--title-link Планер на октябрь
+        
+                                .cart__body--price 130 руб.
+                                .cart__body--quantity 
+                                    .popup__product--quantity.body--quantity-center
+                                        .popup__product--plus
+                                            svg.popup__product__plus--svg
+                                                use(xlink:href="assets/sprite/sprite.svg#plus")
+                                        input(type="text" value="1").popup__product--input
+                                        .popup__product--minus
+                                            svg.popup__product__minus--svg
+                                                use(xlink:href="assets/sprite/sprite.svg#minus")
+                                .cart__body--total 360 руб.
+                                .cart__body--remove
+                                        svg.cart__remove-svg 
+                                            use(xlink:href="assets/sprite/sprite.svg#remove")    
+                            
+                        -}
+                include ../common/cart-discount.pug
+                .cart__block-button
+                    a(href="catalog.html").button__link.cart-continue-shopping--button Прдолжить покупки
+                    a(href="cart-confirm.html").button__link.cart-next--button Далее
+
+                            
+                                
+                                
+                            
+                                
+                        
+
+                
+                
+
+        include ../common/footer.pug
+        include ../common/menu-mobile.pug
+    
+    
+
+
+
+                                

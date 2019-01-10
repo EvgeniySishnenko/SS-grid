@@ -1,0 +1,134 @@
+.cart
+    width 100%
+    height auto
+    margin 20px auto
+.cart__header-grid
+    dis()
+    gtc(110px 5fr 1fr 2fr 1fr)
+    +adapt(992px)
+        gtc(110px 5fr 1fr)
+    +adapt(550px)
+        gtc(110px 1fr)
+.cart__header--product-pic,
+.cart__header--price,
+.cart__header--quantity,
+.cart__header--total,
+.cart__header--name
+    width 100%
+    text-align center
+.cart__header--price,
+.cart__header--quantity
+    +adapt(992px)
+        display none
+.cart__header--product-pic
+    +adapt(550px)
+        display none
+.cart__header--name
+    +adapt(550px)
+        display block
+.cart__header--total
+    +adapt(550px)
+        text-align right
+.cart__body
+    width 100%
+    margin-top 10px
+.cart__body__box-grid
+    dis()
+    gtc(110px 5fr 1fr 2fr 1fr)
+    gta("pic name price quantity total"\
+        "pic name price quantity cart-remove")
+    gtr(auto auto)
+    border-bottom 1px solid #d8d8d8
+    margin-top 10px
+    padding-bottom 10px
+    +adapt(992px)
+        gtc(110px 5fr 1fr)
+        gtr(auto auto auto)
+        gta("pic name price"\
+            "pic quantity total"\
+            "pic quantity cart-remove")
+    +adapt(550px)
+        gtc(110px 1fr 1fr)
+        gtr(auto auto auto)
+        gta("name name price"\
+            "pic quantity  total"\
+            "pic quantity cart-remove")
+        grid-row-gap 15px
+.cart__body--pic
+    grid-area pic
+.cart__body--name
+    text-align center
+    grid-area name
+    position relative
+    +adapt(550px)
+        text-align left
+.cart__body--title-link
+    font(Rl, 22px)
+    tran(color)
+    &:hover
+        color blue
+    +adapt(480px)
+        font-size 18px
+
+.cart__body--price
+    text-align center
+    font(Rm, 16px, blue)
+    grid-area price
+    +adapt(550px)
+        text-align right
+        align-self center
+.cart__body--total
+    text-align center
+    font(Rm, 16px, blue)
+    grid-area total
+    +adapt(550px)
+        text-align right
+.cart__body--quantity
+    grid-area quantity
+    +adapt(550px)
+        align-self start
+.cart__body--remove
+    grid-area cart-remove
+    align-self end
+    justify-self end
+.remove-svg
+    width 15px
+    height 15px
+    cursor pointer
+    fill dark
+.body--quantity-center
+    display flex 
+    justify-content center
+    
+    .popup__product--plus
+        margin-left 0
+
+.cart__remove-svg
+    width 20px
+    height 20px
+    cursor pointer
+    fill #e84e56
+    tran(fill)
+    &:hover
+        fill dark
+.cart__block-button
+    width 100%
+    display flex 
+    justify-content space-between
+    margin-top 40px
+    +adapt(480px)
+       justify-content center 
+       flex-direction column
+       align-items center 
+.cart-continue-shopping--button
+    width 190px
+    +adapt(480px)
+        order 2
+        margin-top 15px
+.cart-next--button
+    background-color dark
+    tran(background-color, blue)
+    &:hover
+       background-color blue
+    +adapt(480px)
+        order 1

@@ -1,0 +1,82 @@
+.forgot
+    position absolute
+    width 100%
+    background-color #fff
+    margin-bottom -800px
+    bottom 0
+    tran(margin, 1.4s)
+.forgot-active
+    border-top 2px solid black
+    border-left 1px solid #d8d8d8
+    border-right 1px solid #d8d8d8
+    border-bottom 1px solid #d8d8d8
+    padding 20px 20px 20px 20px
+    margin-bottom 0
+    min-height 100%
+    height auto
+.block__title-text--forgot
+    +adapt(490px)
+        text-align center
+.block__form-forgot
+    display flex 
+    justify-content center
+    align-items center
+.form__forgot
+    width 60%
+    margin-top 30px
+    +adapt(700px)
+        width 80%
+    +adapt(500px)
+        width 90%
+    +adapt(420px)
+        width 100%
+.forgot__label
+    cursor pointer
+    font(Rr, 16px)
+.forgot__input--email
+    width 100%
+    height 35px
+    border 1px solid #d8d8d8
+    outline none
+    &:focus 
+        border 1px solid dark
+.forgot-important
+    color #ea5979
+.forgot__button
+    width 100%
+    text-align center
+.forgot__input--button
+    width 100%
+    border none
+    outline none 
+    display inline-block
+    margin-top 20px
+    margin-bottom 10px
+    &:focus
+        border none
+        outline none
+.forgot__close
+    position absolute
+    top 20px
+    right 10px
+    font(Rr, 12px)
+    tran(color)
+    cursor pointer
+    text-transform uppercase
+    &:hover
+        color blue
+        .forgot__close--svg
+            fill blue 
+    +adapt(550px)
+        top 10px
+.forgot__close--svg
+    fill dark 
+    tran(fill)
+    width 9px
+    height 9px
+    margin-right 4px
+.forgot-closed--link 
+    font(Rr, 16px)
+    tran(color)
+    &:hover
+        color blue

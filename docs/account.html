@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/app.min.css">
+    <script src="assets/scripts/bundle.js" defer></script>
+  </head>
+  <body>  
+    <div class="grid__container--universal">
+      <header class="header grid__header">
+        <div class="header__top">
+          <div class="container grid__header__top">
+            <div class="header__social">
+              <ul class="header__social--list">
+                      <li class="header__social--item"><a class="header__social--link" href="https://www.facebook.com/stickysisters.ru/" target="_blank">
+                          <svg class="header__social--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#fcb"></use>
+                          </svg></a></li>
+                      <li class="header__social--item"><a class="header__social--link" href="https://www.instagram.com/sticky_sisters/" target="_blank">
+                          <svg class="header__social--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#inst"></use>
+                          </svg></a></li>
+                      <li class="header__social--item"><a class="header__social--link" href="https://www.youtube.com/channel/UCNCwhPjC75koMs9ZmaVCD8g" target="_blank">
+                          <svg class="header__social--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#yt"></use>
+                          </svg></a></li>
+              </ul>
+            </div>
+            <div class="header__options">
+              <ul class="header__options--list">
+                <li class="header__options--item" title="Мой аккаут"><a class="header__options--link" href="account.html">
+                    <svg class="header__options--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#user"></use>
+                    </svg><span class="header__options--text">Мой аккаунт</span></a><a class="header__options--auth_link" href="#">
+                    <svg class="header__options--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#user"></use>
+                    </svg><span class="header__options--auth_name">Евгений</span></a></li>
+                <li class="header__options--item" title="Избранное"><a class="header__options--link" href="#">
+                    <svg class="header__options--svg">
+                      <use xlink:href="assets/sprite/sprite.svg#heart"></use>
+                    </svg><span class="header__options--text">Избранное</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container grid__header__bottom">
+            <div class="header__logo"><a class="home__link" href="index.html"><img class="logo-img" src="assets/images/logo.png">
+                <h2 class="name-shop">Sticky Sisters</h2></a></div>
+            <div class="menu__grid--area">
+              <nav class="header__menu">
+                <ul class="header__menu--list">
+                        <li class="header__menu--item"><a class="header__menu--link" href="index.html">Главная</a>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="#">Каталог</a>
+                          <ul class="header__submenu--list">
+                            <li class="header__submenu--item"> <a class="header__submenu--link" href="stiker.html">Стикеры</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="stickerbooki.html">Стикербуки</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="planner.html">Планеры</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="zakladki.html">Закладки</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="tags_gifts.html">Бирки на подарки</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="cards.html">Открытки</a></li>
+                          </ul>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="aktcii.html">Акции</a>
+                          <ul class="header__submenu--list">
+                            <li class="header__submenu--item"> <a class="header__submenu--link" href="aktcii.html">Дарим 1000 рублей</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="aktcii.html">Бесплатная доставка</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="aktcii.html">Промокоды</a></li>
+                            <li class="header__submenu--item"><a class="header__submenu--link" href="aktcii.html">Узнать больше</a></li>
+                          </ul>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="sale_product.html">Распродажа</a>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="dostavka.html">Доставка</a>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="o-nas.html">О нас</a>
+                        </li>
+                        <li class="header__menu--item"><a class="header__menu--link" href="title_news.html">Новости</a>
+                        </li>
+                </ul>
+              </nav>
+              <div class="btn__mobile">
+                <div class="btn__mobile-line"></div>
+                <div class="btn__mobile-line"></div>
+                <div class="btn__mobile-line"></div>
+              </div>
+            </div>
+            <div class="header__cart"><a class="header__cart--link" href="cart-oneclick.html">
+                <svg class="header__cart--svg">
+                  <use xlink:href="assets/sprite/sprite.svg#cart"></use>
+                </svg><span class="header__cart--text">Корзина:&nbsp; </span><span class="header__cart--count">100 </span><span class="header__cart--rest"> &nbsp;товар(ов)</span></a>
+              <div class="cart_hover">
+                <ul class="cart_hover--list">
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cart_hover--item">
+                    <div class="cart_hover--pic"><img class="cart_hover--img" src="assets/images/prod.png"></div>
+                    <div class="wrap_product">
+                      <div class="cart_hover--descr"><a class="title__product--link" href="view_content.html">Наклейки номер  500Наклейки 500Наклейки </a>
+                        <div class="cart__price__count"><span class="cart__price">123&nbsp;</span><span class="cart__count">× 2</span></div>
+                        <div class="cart__remove">
+                          <svg class="remove_svg"> 
+                            <use xlink:href="assets/sprite/sprite.svg#remove"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+                <div class="cart_hover_footer">
+                  <div class="wrap__footer">
+                    <div class="cart_hover_price"><span class="price__text">Итого: &nbsp;</span><span class="price__count">50000 руб.</span></div>
+                    <div class="block__button"><a class="button__link cart__hover__button" href="cart.html">Перейти в корзину</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section section__area">
+        <div class="container container__account">
+          <div class="navigation"><a class="navigation__link" href="index.html">Главная </a><span class="navigation__current-page"> 
+              <svg class="navigation-svg">
+                <use xlink:href="assets/sprite/sprite.svg#next"> </use>
+              </svg>Темы блога</span></div>
+          <div class="block__title--account">
+            <h2 class="h2__title--account">Аккаунт</h2>
+          </div>
+          <div class="profile">
+            <div class="block__title-text block__title-text--profile">Добро пожаловать, Евгений</div>
+            <div class="block--shrt_text">
+              На страницу данного раздела, можно редактировать иформацию о пользователе.
+              Также содержится информация о покупках
+            </div>
+            <div class="wrap__edit-information">
+              <div class="edit">
+                <div class="block__title-text">Управление аккаутом</div>
+                <ul class="edit-list">
+                  <li class="edit-item" id="firstname">
+                    <div class="edit-title">Имя пользователя</div>
+                    <div class="edit-value" data-attr="firstname">Евгений</div>
+                    <div class="block__edit--svg">
+                      <svg class="edit--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#pen"></use>
+                      </svg>
+                    </div>
+                    <div class="block__edit__form">
+                      <form class="edit__form">
+                        <input class="edit__input" type="text" data-inner="firstname" value="Евгений">
+                        <input class=" button__link edit__save-button" type="submit"><a class="edit-cancel" href="firstname"> 
+                          <svg class="edit-cancel--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                          </svg></a>
+                      </form>
+                      <div class="error__container"></div>
+                    </div>
+                  </li>
+                  <li class="edit-item" id="lastname">
+                    <div class="edit-title">Фамилия пользователя</div>
+                    <div class="edit-value" data-attr="lastname">Евгений</div>
+                    <div class="block__edit--svg">
+                      <svg class="edit--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#pen"></use>
+                      </svg>
+                    </div>
+                    <div class="block__edit__form">
+                      <form class="edit__form">
+                        <input class="edit__input edit__input" type="text" data-inner="lastname" value="Евгений">
+                        <input class=" button__link edit__save-button" type="submit"><a class="edit-cancel" href="lastname"> 
+                          <svg class="edit-cancel--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                          </svg></a>
+                      </form>
+                      <div class="error__container"> </div>
+                    </div>
+                  </li>
+                  <li class="edit-item" id="patronymic">
+                    <div class="edit-title">Отчество пользователя</div>
+                    <div class="edit-value" data-attr="patronymic">Евгений</div>
+                    <div class="block__edit--svg">
+                      <svg class="edit--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#pen"></use>
+                      </svg>
+                    </div>
+                    <div class="block__edit__form">
+                      <form class="edit__form">
+                        <input class="edit__input" type="text" data-inner="patronymic" value="Евгений">
+                        <input class=" button__link edit__save-button" type="submit"><a class="edit-cancel" href="patronymic"> 
+                          <svg class="edit-cancel--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                          </svg></a>
+                      </form>
+                      <div class="error__container"> </div>
+                    </div>
+                  </li>
+                  <li class="edit-item" id="email">
+                    <div class="edit-title">Email пользователя</div>
+                    <div class="edit-value" data-attr="email">Евгений</div>
+                    <div class="block__edit--svg">
+                      <svg class="edit--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#pen"></use>
+                      </svg>
+                    </div>
+                    <div class="block__edit__form">
+                      <form class="edit__form">
+                        <input class="edit__input" type="text" data-inner="email" value="Евгений">
+                        <input class=" button__link edit__save-button" type="submit"><a class="edit-cancel" href="email">
+                          <svg class="edit-cancel--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                          </svg></a>
+                      </form>
+                      <div class="error__container"> </div>
+                    </div>
+                  </li>
+                  <li class="edit-item" id="phone">
+                    <div class="edit-title">Телефон пользователя</div>
+                    <div class="edit-value" data-attr="phone">Евгений</div>
+                    <div class="block__edit--svg">
+                      <svg class="edit--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#pen"></use>
+                      </svg>
+                    </div>
+                    <div class="block__edit__form">
+                      <form class="edit__form">
+                        <input class="edit__input" type="text" data-inner="phone" value="Евгений">
+                        <input class=" button__link edit__save-button" type="submit"><a class="edit-cancel" href="phone"> 
+                          <svg class="edit-cancel--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                          </svg></a>
+                      </form>
+                      <div class="error__container"></div>
+                    </div>
+                  </li>
+                  <li class="edit-item" id="index">
+                    <div class="edit-title">Индекс пользователя</div>
+                    <div class="edit-value" data-attr="index">Евгений</div>
+                    <div class="block__edit--svg">
+                      <svg class="edit--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#pen"></use>
+                      </svg>
+                    </div>
+                    <div class="block__edit__form">
+                      <form class="edit__form">
+                        <input class="edit__input" type="text" data-inner="index" value="Евгений">
+                        <input class=" button__link edit__save-button" type="submit"><a class="edit-cancel" href="index"> 
+                          <svg class="edit-cancel--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                          </svg></a>
+                      </form>
+                      <div class="error__container"></div>
+                    </div>
+                  </li>
+                  <li class="edit-item" id="address">
+                    <div class="edit-title">Адрес доставки </div>
+                    <div class="edit-value" data-attr="address"> Пятницкое шоссе дом 110 корпус 2 кв. Москва район Митино Московская область</div>
+                    <div class="block__edit--svg">
+                      <svg class="edit--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#pen"></use>
+                      </svg>
+                    </div>
+                    <div class="block__edit__form">
+                      <form class="edit__form">
+                        <input class="edit__input" type="text" data-inner="address" value="Пятницкое шоссе дом 110 корпус 2 кв. Москва район Митино Московская область">
+                        <input class=" button__link edit__save-button" type="submit"><a class="edit-cancel" href="address">
+                          <svg class="edit-cancel--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                          </svg></a>
+                      </form>
+                      <div class="error__container"></div>
+                    </div>
+                  </li>
+                  <li class="edit-item" id="pass">
+                    <div class="edit-title">Изменить пароль</div>
+                    <div class="edit-value">Евгений</div>
+                    <div class="block__edit--svg">
+                      <svg class="edit--svg">
+                        <use xlink:href="assets/sprite/sprite.svg#pen"></use>
+                      </svg>
+                    </div>
+                    <div class="block__edit__form">
+                      <form class="edit__form">
+                        <input class="edit__input edit__input--pass" type="text" placeholder="Новый пароль">
+                        <input class="edit__input edit__input--newpass" type="text" placeholder="Старый пароль">
+                        <input class=" button__link edit__save-button" type="submit"><a class="edit-cancel" href="pass">
+                          <svg class="edit-cancel--svg">
+                            <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                          </svg></a>
+                      </form>
+                      <div class="error__container">  </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="information"> 
+                <div class="block__title-text">Дебит и кредит</div>
+                <div class="block--shrt_text">Это новый раздел вашего аккаута. Информация может не соответсовать действительности, но лишь на время. Приносим извинения)
+                  <ul class="information--list">
+                    <li class="information--item"> <span class="information-title">Всего начисленно баллов</span><span class="information-value">1000</span></li>
+                    <li class="information--item"> <span class="information-title">Всего потраченно баллов</span><span class="information-value">1000</span></li>
+                    <li class="information--item"> <span class="information-title">Всего купленно товаров</span><span class="information-value">1000</span></li>
+                    <li class="information--item"> <span class="information-title">Купленно товаров на сумму</span><span class="information-value">1000</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="block__account">
+            <div class="wrap__account">
+              <div class="account__create">
+                <div class="block__title-text">Нет аккаутна?</div>
+                <div class="block--shrt_text">Не беда. Регистрация простая и бесплатная!</div>
+                <ul class="account__create--list">
+                  <li class="account__create--item"> <span class="account__create--mark">&#10004;</span>Быстрая проверка</li>
+                  <li class="account__create--item"> <span class="account__create--mark">&#10004;</span>На счет 1000 руб.</li>
+                  <li class="account__create--item"> <span class="account__create--mark">&#10004;</span>Сохранение адреса доставки(экономия времени)</li>
+                  <li class="account__create--item"> <span class="account__create--mark">&#10004;</span>Добавление товары в избранное </li>
+                </ul>
+                <div class="account__create--button"><a class="button__link create--button" href="#">Создать аккаунт</a></div>
+              </div>
+              <div class="account__auth">
+                <div class="block__title-text">Уже зарегистрированы?</div>
+                <div class="block__form">
+                  <form class="form__auth">
+                    <label class="auth__label">
+                      <div class="auth--email">Email</div>
+                      <input class="auth__input--email" required type="text" name="auth_email">
+                    </label>
+                    <label class="auth__label">
+                      <div class="auth--pass">Пароль</div>
+                      <input class="auth__input--pass" required type="password" name="auth_pass">
+                    </label>
+                    <div class="auth__button">
+                      <input class="button__link auth__input--button " type="submit" value="Авторизоваться" name="auth_button"><a class="forgot--link" href="#">Зыбыли пароль?</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="forgot">
+              <div class="block__title-text block__title-text--forgot">Мы вышлем Вам новый пароль на почту</div>
+              <div class="block__form block__form-forgot">
+                <form class="form__forgot">
+                  <label class="forgot__label">
+                    <div class="forgot--email">Email<span class="forgot-important">*</span></div>
+                    <input class="forgot__input forgot__input--email" required title="Поле не может быть пустым" type="email" name="reg_email">
+                  </label>
+                  <div class="forgot__button">
+                    <input class="button__link forgot__input--button" type="submit" value="Отправить" name="forgot_button"><a class="forgot-closed--link" href="#">Закрыть</a>
+                  </div>
+                </form>
+              </div>
+              <div class="forgot__close">
+                <svg class="forgot__close--svg">
+                  <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                </svg>Закрыть
+              </div>
+            </div>
+          </div>
+          <div class="registration">
+            <div class="wrap__reg">
+              <div class="block__title-text">Создание аккаунта</div>
+              <div class="block__form block__form-reg">
+                <form class="form__reg">
+                  <div class="wrap__label"> 
+                    <label class="reg__label">
+                      <div class="reg--email">Имя<span class="reg-important">*</span></div>
+                      <input class="reg__input reg__input--firstname" required title="От 3 до 15 символов" type="text" name="reg_firstname">
+                    </label>
+                    <label class="reg__label">
+                      <div class="reg--email">Фамилия<span class="reg-important">*</span></div>
+                      <input class="reg__input reg__input--lastname" required title="От 3 до 25 символов" type="text" name="reg_lastname">
+                    </label>
+                  </div>
+                  <div class="wrap__label">    
+                    <label class="reg__label">
+                      <div class="reg--email">Отчество<span class="reg-important">*</span></div>
+                      <input class="reg__input reg__input--patronymic" required title="От 3 до 15 символов" type="text" name="reg_patronymic">
+                    </label>
+                    <label class="reg__label">
+                      <div class="reg--email">Email<span class="reg-important">*</span></div>
+                      <input class="reg__input reg__input--email" required title="Поле не может быть пустым" type="email" name="reg_email">
+                    </label>
+                  </div>
+                  <div class="wrap__label">
+                    <label class="reg__label">
+                      <div class="reg--pass">Пароль<span class="reg-important">*</span></div>
+                      <input class="reg__input reg__input--pass" required title="Не менее 7 символов" type="password" name="reg_pass">
+                    </label>
+                    <label class="reg__label">
+                      <div class="reg--repeatpass">Повторите пароль<span class="reg-important">* </span></div>
+                      <input class="reg__input reg__input--repeatpass" required title="Поле не может быть пустым" type="password" name="reg_repeatpass">
+                    </label>
+                  </div>
+                  <div class="wrap__label">
+                    <label class="reg__label">
+                      <div class="reg--phone">Телефон<span class="reg-important">*</span></div>
+                      <input class="reg__input reg__input--phone" required title="Поле не может быть пустым" type="text" name="reg_phone">
+                    </label>
+                    <label class="reg__label">
+                      <div class="reg--index">Индекс</div>
+                      <input class="reg__input reg__input--index" type="text" name="reg_index">
+                    </label>
+                  </div>
+                  <div class="block__address">
+                    <label class="reg__label">
+                      <div class="reg--address">Адрес доставки</div>
+                      <input class="reg__input reg__input--address" type="text" name="reg_address">
+                    </label>
+                  </div>
+                  <div class="registration__recaptcha g-recaptcha"></div>
+                  <div class="reg__button">
+                    <input class="button__link reg__input--button" type="submit" value="Создать аккаунт" name="reg_button"><a class="reg-closed--link" href="#">Закрыть</a>
+                  </div>
+                </form>
+              </div>
+              <div class="reg__close">
+                <svg class="reg__close--svg">
+                  <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+                </svg>Закрыть
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__options">
+            <ul class="footer__options--list-grid">
+              <li class="footer__options--item foot-item1">
+                <div class="footer__title">О нашей компании</div>
+                <h3 class="footer__company">Sticky Sisters</h3>
+                <div class="footer__descr">
+                  Душа моя озарена неземной радостью, как эти чудесные весенние утра, 
+                  которыми я наслаждаюсь от всего сердца. 
+                  Я совсем один и блаженствую в здешнем краю, 
+                  словно созданном для таких, как я. Я так счастлив, 
+                  мой друг, так упоен ощущением покоя, что искусство 
+                  мое страдает от этого. 
+                </div>
+              </li>
+              <li class="footer__options--item foot-item2">
+                <div class="footer__title">Категории</div>
+                <ul class="footer__options--sub-list">
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Стикеры</a></li>
+                </ul>
+              </li>
+              <li class="footer__options--item foot-item3">
+                <div class="footer__title">Информация</div>
+                <ul class="footer__options--sub-list">
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Доставка</a></li>
+                </ul>
+              </li>
+              <li class="footer__options--item foot-item4">
+                <div class="footer__title">Мой профиль</div>
+                <ul class="footer__options--sub-list">
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Профиль</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Выйти</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="registration.html">Регистрация</a></li>
+                  <li class="footer__options--sub-items"><a class="footer__options--sub-link" href="#">Войти</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__information"><span class="footer__information--company">&copy; <a class="footer__information--link" href="https://use-web.ru" target="_blank">use-web &nbsp;	 </a></span><span class="footer__information--care">с заботой  для Sticky Sisters</span></div>
+          </div>
+        </div>
+      </footer>
+      <div class="block__menu__mobile">
+        <div class="block__left">
+          <ul class="menu__mobile--list">
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="index.html">Главная</a>
+                  </li>
+                  <li class="menu__mobile--item">
+                    <div class="wrap__link-plus"><a class="menu__mobile--link" href="#">Каталог</a>
+                      <div class="btn__plus">
+                        <div class="wrap__plus">
+                          <div class="btn__plus--line1"></div>
+                          <div class="btn__plus--line2"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="header__mobile__submenu--list">
+                      <li class="header__mobile__submenu--item"> <a class="header__mobile__submenu--link" href="stiker.html">Стикеры</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="stickerbooki.html">Стикербуки</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="planner.html">Планеры</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="zakladki.html">Закладки</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="tags_gifts.html">Бирки на подарки</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="cards.html">Открытки</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__mobile--item">
+                    <div class="wrap__link-plus"><a class="menu__mobile--link" href="aktcii.html">Акции</a>
+                      <div class="btn__plus">
+                        <div class="wrap__plus">
+                          <div class="btn__plus--line1"></div>
+                          <div class="btn__plus--line2"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <ul class="header__mobile__submenu--list">
+                      <li class="header__mobile__submenu--item"> <a class="header__mobile__submenu--link" href="aktcii.html">Дарим 1000 рублей</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="aktcii.html">Бесплатная доставка</a></li>
+                      <li class="header__mobile__submenu--item"><a class="header__mobile__submenu--link" href="aktcii.html">Промокоды </a></li>
+                      <li class="header__mobile__submenu--item"> <a class="header__mobile__submenu--link" href="aktcii.html">Узнать больше          </a></li>
+                    </ul>
+                  </li>
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="sale_product.html">Распродажа</a>
+                  </li>
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="dostavka.html">Доставка</a>
+                  </li>
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="o-nas.html">О нас</a>
+                  </li>
+                  <li class="menu__mobile--item"><a class="menu__mobile--link" href="title_news.html">Новости</a>
+                  </li>
+          </ul>
+        </div>
+        <div class="block__right">
+          <div class="closed">
+            <svg class="closed-svg"> 
+              <use xlink:href="assets/sprite/sprite.svg#closed"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

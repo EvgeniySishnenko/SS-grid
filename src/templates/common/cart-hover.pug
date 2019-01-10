@@ -1,0 +1,24 @@
+.cart_hover
+    ul.cart_hover--list
+        - for (var i=0; i<5; i++) {     
+            li.cart_hover--item
+                .cart_hover--pic
+                    img(src="assets/images/prod.png" ).cart_hover--img
+                .wrap_product
+                    .cart_hover--descr
+                        a(href="view_content.html").title__product--link Наклейки номер  500Наклейки 500Наклейки 
+                        .cart__price__count
+                            span.cart__price 123&nbsp;
+                            span.cart__count × 2
+                        .cart__remove
+                            svg.remove_svg 
+                                use(xlink:href="assets/sprite/sprite.svg#remove")
+        - }
+    
+    .cart_hover_footer
+        .wrap__footer
+            .cart_hover_price
+                span.price__text Итого: &nbsp;
+                span.price__count 50000 руб.
+            .block__button
+                a(href="cart.html" class="button__link cart__hover__button") Перейти в корзину

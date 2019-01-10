@@ -1,0 +1,122 @@
+.contacts 
+    // width 100%
+    // height auto
+    // 
+    // display flex
+    // justify-content space-between
+    // margin-bottom 50px
+    // +adapt(875px)
+    //    display block 
+    dis()
+    gtc(repeat(3, 31%))
+    between()
+    margin-top 50px
+    +adapt(875px)
+        gtc(1fr)
+        gap 40px
+.block__contacts,
+.block__feedback,
+.block__follow-us
+    width  100%
+    height auto  
+    // +adapt(875px)
+    //     width 100%
+    //     margin-top 40px
+    //     .block__contacts
+    //         margin-top 0
+.contacts--svg
+    fill blue
+    width 30px
+    height 30px
+.wrap__contacts--svg
+    margin-right 10px
+
+.contacts__text
+    width 100%
+    margin-left 10px
+.contacts__list
+    width 100%
+    margin-top 15px
+.contacts__item
+    width 100%
+    display flex 
+    align-items center
+    margin-top 15px
+    height 70px
+    border-bottom 1px solid #efefef
+    
+    &:last-child
+        border-bottom none 
+
+.contacts--shrt_text
+    font(Rr, 14px)
+    margin-top 5px
+.contacts__title-text
+    font(Rb, 14px)
+    text-transform uppercase
+.follow-us__list
+    width 100%
+    margin-top 15px
+.follow-us__item
+    width 100%
+    margin-top 15px
+    height 70px
+    border-bottom 1px solid #efefef
+    display flex 
+    align-items center
+    &:last-child
+        border-bottom none 
+.follow-us__link
+    width 100%
+    font(Rb, 14px)
+    text-transform uppercase
+    display flex 
+    align-items center
+    tran(color)
+    width 100%
+    .contacts__title-text
+        tran(color)
+    &:hover
+        color blue
+        .contacts__title-text
+            color blue
+.follow-us--svg
+    fill blue
+    width 30px
+    height 30px
+    margin-right 15px
+.form__feedback
+    width 100%
+.feedback__input
+    width 100%
+    height 35px
+    border 1px solid #d8d8d8
+    outline none
+    margin-top 10px
+    &[placeholder]
+        padding-left 10px
+        font(Rr, 15px)
+    &:focus 
+        border 1px solid dark
+.feedback__textarea
+    width 100%
+    min-height 80px
+    margin-top 10px
+    resize vertical 
+    border 1px solid #d8d8d8
+    outline none
+    &:focus 
+        border 1px solid dark
+    &[placeholder]
+        padding-left 10px
+        font(Rr, 15px)
+.feedback__input--button
+    width 50%
+    border none
+    outline none 
+    display inline-block
+    margin-top 20px
+    margin-bottom 10px
+    &:focus
+        border none
+        outline none
